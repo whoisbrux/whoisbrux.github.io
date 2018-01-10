@@ -15,7 +15,8 @@ $font2:'Roboto', sans-serif;
 
 body {
 	background-color: $color2;
-	margin:0;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
 	text-decoration: none;
 }
 
@@ -112,12 +113,14 @@ li {
 	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	flex-direction: column;
 }
 
 .box-img {
 	max-width: 700px;
-	padding-top: 210px;
+	position: absolute;
+	bottom: 30px;
+	z-index: -5;
 }
 
 
@@ -125,56 +128,8 @@ li {
 	width: 100%;
 }
 
-.text {
-	position: absolute;
-	width: 100%;
-	height: 300px;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-}
-
-.text h1 {
-	font-size: 180px;
-	text-transform: uppercase;
-	z-index: -1;
-	letter-spacing: 10px;
-}
-
-.text h1::before {
-	content:'The Revolution in chairs';
-	position: absolute;
-	font-family: $font2;
-	font-size: 25px;
-	right: 5%;
-	top: -60px;
-	text-transform: uppercase;
-	color: #a4a5aa;
-	letter-spacing: 5px;
-
-}
 
 
-
-.text .p1 {
-    position: absolute;
-    font-size: 265px;
-    text-transform: uppercase;
-    z-index: -2;
-    letter-spacing: -7px;
-    font-family: "Righteous", cursive;
-    color: #f7f7f7;
-    top: -360px;
-}
-
-
-.p2 {
-	font-size: 25px;
-	position: absolute;
-	right: 10px;
-	color: #ab8146;
-	margin-top: 40px;
-}
 
 .p2::before {
 	content:'';
@@ -186,8 +141,129 @@ li {
 	position: absolute;
 }
 
+.h1 {
+	font-size: 150px;
+	text-transform: uppercase;
+	margin: 10px;
+	line-height: 150px;
+	position: absolute;
+	z-index: -9;
+}
+
+.h2 {
+	content:'Futuristc';
+	position: absolute;
+	font-size: 200px;
+	color: #eaeaea;
+	margin: auto;
+	text-transform: uppercase;
+	z-index: -10;
+}
 
 
+.p1, .p2 {
+	margin: 100px 5%;
+	align-self: flex-end;
+}
+
+p.p1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ab8146;
+}
+
+a.p2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ab8146;
+    padding: 20px 30px;
+    display: block;
+    text-decoration: none;
+  }
+
+
+
+  @media only screen and (max-width: 320px) {
+
+.container1 {
+    max-width: 300px;
+}
+
+.h2 {
+    font-size: 100px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-size: 60px;
+    margin: 0 auto;
+}
+
+
+.menu-principal {
+    width: 150px;
+    top: 0px;
+    left: 8px;
+}
+
+.icone-search {
+    top: 6px;
+    right: 5px;
+}
+
+.box-idioma {
+
+    width: 150px;
+    bottom: -10px;
+    left: 5px;
+}
+
+.icone-idioma {
+    padding: 5px;
+}
+
+.social ul {
+    bottom: 5px;
+    right: 5px;
+    width: 80px;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.box-img {
+    max-width: 300px;
+    margin: auto auto;
+}
+
+.p1, .p2 {
+    margin: 0 0;
+    align-self: center;
+}
+.p1 {
+    position: absolute;
+    top: 100px;
+    
+}
+
+.p2 {
+	position: absolute;
+	bottom: 80px;
+}
+
+.p2::before {
+	display: none;
+}
+
+a.p2 {
+    font-size: 14px;
+    padding: 13px 20px;
+   	background: #ab8146;
+    border-radius: 25px;
+    color: #fff;
+    font-family: $font2;
+}
+
+}
 
 
 
