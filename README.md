@@ -1,32 +1,26 @@
-s
-## Tempo: 00
-Data: 13:00am | 20.12
+## Step by Step
+#### Init New folder in Gulp / Sass/ HotReload /
+
+- 1) Execute Prompt (NodeJS w/ Admin)
+
+- 2) Create folder Project
+
+- 5) Paste all archives from (Root Folder) in new Folder 
+
+- 4) Navigation into folder on prompt
+> execute: cd /path/to/dir
+
+- 5) Run Gulp
+> execute: gulp
 
 
-#### Afazeres Bruno:
->Paginas:
+## Create git ignore
+- Init bash on folder of new project
 
-<ul>
-	<li>Home-Done</li>
-	<li>Contato</li>
-	<li>Sobre</li>
-	<li>Internas</li>
-	<li>Menu</li>
-</ul>
+- Create gitignore archive
+> execute: touch gitignore
 
-Web:
-```bash
-<link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Josefin+Sans:400,700" rel="stylesheet">
-
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Barlow', sans-serif;
-
-```
-
-Cores:
-```bash
-
-
-```
-
+- Insert files to ignore on archive gitignore
+> name (name from archive)
+> name_from_folder (for ignore all content folder)
 
