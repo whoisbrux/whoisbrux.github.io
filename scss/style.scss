@@ -18,6 +18,7 @@ body {
 	margin:0 0 0 0;
 	padding: 0 0 0 0;
 	text-decoration: none;
+	overflow: hidden;
 }
 
 h1 {
@@ -33,14 +34,15 @@ li {
 	list-style: none;
 }
 
+
 /* HEADER */
 
 .menu-principal {
 	position: absolute;
 	display: flex;
-	width: 300px;
-	top: 30px;
-	left: 30px;
+	width: 150px;
+	top: 0px;
+	left: 8px;
 	align-items: center;
 }
 
@@ -60,8 +62,8 @@ li {
 	position: absolute;
 	width: 15px;
 	padding: 10px;
-	top: 30px;	
-	right: 30px;
+	top: 6px;	
+	right: 5px;
 }
 
 /* FIM HEADER */
@@ -72,34 +74,37 @@ li {
 .box-idioma {
 	position: absolute;
 	display: flex;
-	width: 300px;
-	bottom: 20px;
-	left: 30px;
+	width: 150px;
+	bottom: -10px;
+	left: 5px;
 	align-items: center;
 }
 
 .icone-idioma {
 	width: 15px;
-	padding: 10px;
+	padding: 5px;
 }
 
 .idioma {
 	font-size: 14px;
 	font-family: $font2;
-	padding:10px 0;
 	line-height: 10px;
-	letter-spacing: 1px;
+	padding: 20px 0;
+  margin: 0 0;
 }
 
 .social ul {
 	position: absolute;
-	bottom: 20px;
-	right:30px;
+	bottom: 5px;
+	right:5px;
 	display: block;
-	width: 50px;
-	padding: 0;
+	width: 80px;
   text-align: right;
+  display: flex;
+  margin: 0 0 0 0;
+  padding-left: 0px;
 }
+
 
 .social img {
 	width: 15px;
@@ -107,29 +112,91 @@ li {
 }
 
 .container1 {
-	max-width: 1140px;
+	max-width: 300px;
 	height: 100vh;
 	display: flex;
 	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
 }
 
 .box-img {
-	max-width: 700px;
+	max-width: 300px;
 	position: absolute;
-	bottom: 30px;
+	bottom: 5%;
 	z-index: -5;
+	margin: auto auto;
 }
-
 
 .box-img img {
 	width: 100%;
 }
 
+.h1 {
+	font-size: 50px;
+	text-transform: uppercase;
+	margin: 10px;
+	line-height: 150px;
+	position: absolute;
+	z-index: -9;
+}
+
+.h2 {
+
+	position: absolute;
+	font-size: 55px;
+	color: #eaeaea;
+	margin: auto;
+	text-transform: uppercase;
+	z-index: -10;
+}
+
+.p1 {
+    position: absolute;
+    top: 100px;    
+}
+
+.p2 {
+	position: absolute;
+	bottom: 80px;
+} 
+
+.p1, .p2 {
+    align-self: center;
+}
+
+p.p1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ab8146;
+}
+
+ a.p2 {
+    font-size: 14px;
+    padding: 13px 20px;
+   	background: #ab8146;
+    border-radius: 25px;
+    color: #fff;
+    font-family: $font2;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
 
 
+@media only screen and (min-width: 321px) {
+
+.box-img {
+    bottom: 20%;
+}
+}
+
+
+
+
+/* 
 
 .p2::before {
 	content:'';
@@ -141,130 +208,6 @@ li {
 	position: absolute;
 }
 
-.h1 {
-	font-size: 150px;
-	text-transform: uppercase;
-	margin: 10px;
-	line-height: 150px;
-	position: absolute;
-	z-index: -9;
-}
-
-.h2 {
-	content:'Futuristc';
-	position: absolute;
-	font-size: 200px;
-	color: #eaeaea;
-	margin: auto;
-	text-transform: uppercase;
-	z-index: -10;
-}
-
-
-.p1, .p2 {
-	margin: 100px 5%;
-	align-self: flex-end;
-}
-
-p.p1 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #ab8146;
-}
-
-a.p2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ab8146;
-    padding: 20px 30px;
-    display: block;
-    text-decoration: none;
-  }
-
-
-
-  @media only screen and (max-width: 320px) {
-
-.container1 {
-    max-width: 300px;
-}
-
-.h2 {
-    font-size: 100px;
-    margin: 0 auto;
-}
-
-.h1 {
-    font-size: 60px;
-    margin: 0 auto;
-}
-
-
-.menu-principal {
-    width: 150px;
-    top: 0px;
-    left: 8px;
-}
-
-.icone-search {
-    top: 6px;
-    right: 5px;
-}
-
-.box-idioma {
-
-    width: 150px;
-    bottom: -10px;
-    left: 5px;
-}
-
-.icone-idioma {
-    padding: 5px;
-}
-
-.social ul {
-    bottom: 5px;
-    right: 5px;
-    width: 80px;
-    display: flex;
-    margin-bottom: 0px;
-}
-
-.box-img {
-    max-width: 300px;
-    margin: auto auto;
-}
-
-.p1, .p2 {
-    margin: 0 0;
-    align-self: center;
-}
-.p1 {
-    position: absolute;
-    top: 100px;
-    
-}
-
-.p2 {
-	position: absolute;
-	bottom: 80px;
-}
-
-.p2::before {
-	display: none;
-}
-
-a.p2 {
-    font-size: 14px;
-    padding: 13px 20px;
-   	background: #ab8146;
-    border-radius: 25px;
-    color: #fff;
-    font-family: $font2;
-}
-
-}
-
-
-
-
+*/
+ 
+  
