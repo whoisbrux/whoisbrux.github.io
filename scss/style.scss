@@ -1,213 +1,254 @@
-/*
+/********** VARS **********/
+$ft1: 'Playfair Display', serif;
+$ft2: 'Fjalla One', sans-serif;
+$cor1: #c18563;
+$cor2: #7e401d;
+$cor3: #fae1d3;
 
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;
-
-*/
 
 
-$color1: #000;
-$color2: #fff;
-$font1: 'Righteous', cursive; 
-$font2:'Roboto', sans-serif; 
 
-/* COMEÇO */
 
-body {
-	background-color: $color2;
-	margin:0 0 0 0;
-	padding: 0 0 0 0;
-	text-decoration: none;
-	overflow: hidden;
+/********** CONFIG GERAIS **********/
+ .body {
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    top: -100vh;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    width: 190px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #81421e;
+    font-size: 16px;;
+    color: $cor2;
+    text-transform: uppercase;
+    font-family: $ft2;
+
 }
 
 h1 {
-	color: $color1;
-	font-family: $font1;
-}
+    font-family: $ft1 ;
+    font-size: 60px;
+ }
 
-p {
-	font-family: $font2; 
-}
-
-li {
-	list-style: none;
-}
-
-
-/* HEADER */
-
-.menu-principal {
-	position: absolute;
-	display: flex;
-	width: 150px;
-	top: 0px;
-	left: 8px;
-	align-items: center;
-}
-
-.icone-menu {
-	width: 15px;
-	padding: 10px;
-}
-
-.nome-menu {
-	font-size: 14px;
-	padding:10px 0;
-	line-height: 10px;
-	letter-spacing: 1px;
-}
-
-.icone-search {
-	position: absolute;
-	width: 15px;
-	padding: 10px;
-	top: 6px;	
-	right: 5px;
-}
-
-/* FIM HEADER */
-
-
-/* FOOTER */
-
-.box-idioma {
-	position: absolute;
-	display: flex;
-	width: 150px;
-	bottom: -10px;
-	left: 5px;
-	align-items: center;
-}
-
-.icone-idioma {
-	width: 15px;
-	padding: 5px;
-}
-
-.idioma {
-	font-size: 14px;
-	font-family: $font2;
-	line-height: 10px;
-	padding: 20px 0;
-  margin: 0 0;
-}
-
-.social ul {
-	position: absolute;
-	bottom: 5px;
-	right:5px;
-	display: block;
-	width: 80px;
-  text-align: right;
-  display: flex;
-  margin: 0 0 0 0;
-  padding-left: 0px;
+h3 {
+    font-family: $ft2 ;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 
-.social img {
-	width: 15px;
-	padding: 5px;
-}
-
-.container1 {
-	max-width: 300px;
-	height: 100vh;
-	display: flex;
-	margin: 0 auto;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-
-}
-
-.box-img {
-	max-width: 300px;
-	position: absolute;
-	bottom: 5%;
-	z-index: -5;
-	margin: auto auto;
-}
-
-.box-img img {
-	width: 100%;
-}
-
-.h1 {
-	font-size: 50px;
-	text-transform: uppercase;
-	margin: 10px;
-	line-height: 150px;
-	position: absolute;
-	z-index: -9;
-}
-
-.h2 {
-
-	position: absolute;
-	font-size: 55px;
-	color: #eaeaea;
-	margin: auto;
-	text-transform: uppercase;
-	z-index: -10;
-}
-
-.p1 {
-    position: absolute;
-    top: 100px;    
-}
-
-.p2 {
-	position: absolute;
-	bottom: 80px;
-} 
-
-.p1, .p2 {
-    align-self: center;
-}
-
-p.p1 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #ab8146;
-}
-
- a.p2 {
-    font-size: 14px;
-    padding: 13px 20px;
-   	background: #ab8146;
-    border-radius: 25px;
+/********** LOGO **********/
+.logoPrime {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    left: 3%;
+    top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: $ft1;
     color: #fff;
-    font-family: $font2;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
+    z-index: 3;
+    background: $cor1;
+}
+
+.bordaLogo1, .bordaLogo2, .bordaLogo3, .bordaLogo4 {
+    background: $cor1;
+    position: absolute; 
+}
+
+.bordaLogo1 {
+    width: 100%;
+    height: 1px;
+    top: 0;
+}
+
+.bordaLogo2 {
+    width: 1px;
+    height: 100%;
+    right: 0; 
+}
+
+.bordaLogo3 {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;  
+}
+
+.bordaLogo4 {
+    width: 1px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 
-@media only screen and (min-width: 321px) {
+/********** menu **********/
 
-.box-img {
-    bottom: 20%;
-}
-}
-
-
-
-
-/* 
-
-.p2::before {
-	content:'';
-	color: #ab8146;
-	margin-top: 30px;
-	background: #ab8146; 
-	width: 80px;
-	height: 5px;
-	position: absolute;
+.linkMenu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
 
-*/
- 
-  
+.menu {
+    width: 20px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.risco1, .risco2, .risco3 {
+    width: 100%;
+    height: 1px;
+    background: $cor1;
+}
+
+.risco2 {
+    bottom: 0;
+}
+
+/********** Home **********/
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: $cor3;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.homePhoto{
+    height: 100%;
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+}
+
+.photoHome {
+    width: 100%;
+    height: 100vh;
+    background: url("/img/photo/modeltest.jpg") center no-repeat;
+    background-size: cover;
+    opacity: .3;
+}
+
+
+.textoHome {
+    line-height: 50px;
+    color: $cor2;
+    font-weight: 700;
+    position: absolute;
+
+}
+
+.home .button {
+    position: absolute;
+    bottom: 2%;
+}
+
+/********** Slider **********/
+
+.ctnSlider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.sliderTextos {
+    width: 70%;
+    height: 12vh;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $cor1;
+    overflow: hidden;   
+}
+
+.sliderTextos h1 {
+    position: absolute;
+    font-size: 12vw;
+}
+
+.photoSlider {
+    width: 80%;
+    height: 70vh;
+    position: absolute;
+    background: url("/img/photo/modeltest.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.ctnSlider .button {
+    position: absolute;
+    bottom: 10px;
+    color: $cor1;
+    border-color: $cor1;
+    bottom: 2%;
+
+}
+
+
+/********** DivUm **********/
+.divUm {
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background: $cor1;
+    display: flex;
+}
+
+.colunaUm,.colunaDois {
+    flex-gorw: 1;
+
+}
+
+.boxPhotoDois {
+    width: 100%;
+    height: 400px;
+    background: #000;
+}
+
+
+.teste1 {
+    position: fixed;
+    background: #ff0000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
