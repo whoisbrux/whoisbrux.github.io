@@ -10,7 +10,7 @@
 - 4) Navigation into folder on prompt
 > execute: cd /path/to/dir
 
-- 5) Run Gulp
+- 5) Run  Gulp
 > execute: gulp
 
 
