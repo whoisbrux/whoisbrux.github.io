@@ -132,11 +132,16 @@ h3 {
   .logoMob {
     width: 70px;
     height: 70px;
-    top: 30px; }
+    top: 30px; 
+    left: 30px;
+  }
+
+
   .logoI {
     display: none; }
   .logoIsa {
-    display: flex; } }
+    display: flex; } 
+  }
 
 /********** menu **********/
 .linkMenu {
