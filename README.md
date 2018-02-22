@@ -1,5 +1,5 @@
 ## Step by Step
-#### Init New folder in Gulp / Sass/ HotReload /
+#### Init New  folder in Gulp / Sass/ HotReload /
 
 - 1) Execute Prompt (NodeJS w/ Admin)
 
