@@ -5,7 +5,6 @@
 
 .main {
   width: 100%;
-  top: -100vh;
   position: absolute;
   overflow: hidden; }
 
@@ -32,7 +31,7 @@ h3 {
   line-height: 25px; }
 
 /********** LOGO **********/
-.logoPrime {
+.logoMob {
   width: 45px;
   height: 45px;
   position: fixed;
@@ -48,6 +47,9 @@ h3 {
   color: #fff;
   z-index: 3;
   background: #c18563; }
+
+.logoIsa {
+  display: none; }
 
 .bordaLogo1, .bordaLogo2, .bordaLogo3, .bordaLogo4 {
   background: #c18563;
@@ -74,6 +76,17 @@ h3 {
   height: 100%;
   left: 0;
   bottom: 0; }
+
+@media only screen and (min-width: 767px) {
+  .logoMob {
+    width: 70px;
+    height: 70px;
+    top: 30px;
+    left: 30px; }
+  .logoI {
+    display: none; }
+  .logoIsa {
+    display: flex; } }
 
 /********** menu **********/
 .linkMenu {
@@ -102,6 +115,62 @@ h3 {
 .risco2 {
   bottom: 0; }
 
+@media only screen and (min-width: 767px) {
+  .linkMenu {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #c18563;
+    top: 30px;
+    right: 30px; } }
+
+/********** Menu pagina **********/
+.menuPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #7e401d; }
+
+.menuPage h1 {
+  color: #fff;
+  font-size: 13vw;
+  line-height: 12vh; }
+
+.ctnDevMob {
+  width: 200px;
+  height: 40px;
+  bottom: 10px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 10px; }
+
+.ctnDevMob a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.boxDev {
+  width: 150px; }
+
+.boxDev img {
+  width: 150px; }
+
+.logoEfetivos {
+  height: 30px; }
+
+.logoEfetivos img {
+  height: 30px; }
+
 /********** Home **********/
 .home {
   position: relative;
@@ -123,19 +192,30 @@ h3 {
 .photoHome {
   width: 100%;
   height: 100vh;
-  background: url("/img/photo/modeltest.jpg") center no-repeat;
+  background: url("/img/photo/modeltest.jpg") top no-repeat;
   background-size: cover;
   opacity: .3; }
 
 .textoHome {
-  line-height: 50px;
+  line-height: 10vw;
   color: #7e401d;
   font-weight: 700;
-  position: absolute; }
+  position: absolute;
+  font-size: 12vw; }
 
 .home .button {
   position: absolute;
   bottom: 2%; }
+
+@media only screen and (min-width: 767px) {
+  .home .button {
+    bottom: 3%; } }
+
+@media only screen and (min-width: 1365px) {
+  .textoHome {
+    line-height: calc(6vw - -8px);
+    font-size: 8vw;
+    left: 11vw; } }
 
 /********** Slider **********/
 .ctnSlider {
@@ -146,7 +226,7 @@ h3 {
   justify-content: center;
   align-items: center; }
 
-.sliderTextos {
+.sliderH1 {
   width: 70%;
   height: 12vh;
   z-index: 1;
@@ -157,15 +237,18 @@ h3 {
   color: #c18563;
   overflow: hidden; }
 
-.sliderTextos h1 {
+.sliderH1 h1 {
   position: absolute;
   font-size: 12vw; }
+
+.sliderP {
+  display: none; }
 
 .photoSlider {
   width: 80%;
   height: 70vh;
   position: absolute;
-  background: url("/img/photo/modeltest.jpg") center no-repeat;
+  background: url("/img/photo/modeltest.jpg") top no-repeat;
   background-size: cover; }
 
 .ctnSlider .button {
@@ -175,26 +258,177 @@ h3 {
   border-color: #c18563;
   bottom: 2%; }
 
-/********** DivUm **********/
-.divUm {
-  max-width: 1200px;
-  height: 800px;
-  margin: 0 auto;
-  background: #c18563;
-  display: flex; }
+.navegador {
+  display: none; }
 
-.colunaUm, .colunaDois {
-  flex-gorw: 1; }
+.ctnDev {
+  display: none; }
 
-.boxPhotoDois {
-  width: 100%;
-  height: 400px;
-  background: #000; }
+.ctnSocial {
+  display: none; }
 
-.teste1 {
-  position: fixed;
-  background: #ff0000;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+.ctnTraco {
+  display: none; }
+
+@media only screen and (min-width: 767px) {
+  .bordaT {
+    position: absolute;
+    height: 1px;
+    top: 60px;
+    background: #e6e6e6;
+    width: calc(100% - 120px * 2); }
+  .bordaR {
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 90px * 2);
+    bottom: 60px;
+    right: 60px;
+    background: #e6e6e6; }
+  .bordaB1 {
+    position: absolute;
+    height: 1px;
+    right: 60px;
+    bottom: 60px;
+    background: #e6e6e6;
+    z-index: -1;
+    width: calc(100% / 2 - 180px); }
+  .bordaB2 {
+    position: absolute;
+    height: 1px;
+    left: 60px;
+    bottom: 60px;
+    background: #e6e6e6;
+    z-index: -1;
+    width: calc(100% / 2 - 180px); }
+  .bordaL {
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 90px * 2);
+    bottom: 60px;
+    left: 60px;
+    background: #e6e6e6; }
+  .ctnSlider .button {
+    bottom: 35px; }
+  .contadorNumeros {
+    display: flex;
+    position: absolute; }
+  .contadorNumero {
+    width: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + .2vw);
+    color: #767574; }
+  .contador {
+    position: fixed;
+    width: 20px;
+    height: 100px;
+    left: 50px;
+    overflow: hidden;
+    background: #fff; }
+  .contadorTotal {
+    border-top: 1px solid #767574;
+    bottom: 0; }
+  .navegador {
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-around; }
+  .navegadorUm {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7e401d;
+    color: #7e401d; }
+  .ctnSocial {
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    left: 50px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .5; }
+  .boxSocial {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .boxSocial img {
+    height: 100%; }
+  .ctnDev {
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: .5; }
+  .boxDev {
+    width: 150px; }
+  .boxDev img {
+    width: 150px; }
+  .logoEfetivos {
+    height: 30px; }
+  .logoEfetivos img {
+    height: 30px; } }
+
+@media only screen and (min-width: 1023px) {
+  .photoSlider {
+    width: 50%;
+    right: 0; }
+  .sliderH1 {
+    justify-content: flex-start;
+    left: 9%; }
+  .sliderP {
+    width: 40%;
+    height: 150px;
+    left: 11%;
+    bottom: 33%;
+    display: block;
+    position: absolute;
+    overflow: hidden; }
+  .sliderP p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 30px;
+    font-size: calc(.4rem + .718vw);
+    color: #929292; } }
+
+@media only screen and (min-width: 1365px) {
+  .ctnTraco {
+    width: 6vw;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 8vw;
+    top: calc(52% - -3px); }
+  .traco {
+    width: 100%;
+    height: 100%;
+    background: #c18563; }
+  .sliderH1 {
+    width: 40%;
+    height: 16vh;
+    bottom: 50%; }
+  .sliderH1 h1 {
+    font-size: 6vw; }
+  .sliderP {
+    width: 33%;
+    left: 15%;
+    top: calc(51% - 2px); }
+  .sliderP p {
+    line-height: 35px; }
+  .navegador {
+    bottom: 9vh; } }
