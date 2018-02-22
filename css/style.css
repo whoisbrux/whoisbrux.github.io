@@ -1,0 +1,498 @@
+/********** VARS **********/
+/********** CONFIG GERAIS **********/
+.body {
+  overflow: hidden; }
+
+.main {
+  width: 100%;
+  position: absolute;
+  overflow: hidden; }
+
+* {
+  box-sizing: border-box; }
+
+.button {
+  width: 190px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #bc0173;
+  font-size: 16px;
+  color: #bc0173;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif; }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px; }
+
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 15px;
+  line-height: 25px; }
+
+/**********    INTRO   **********/
+.intro {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.logoMobAnime {
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+
+.backLogo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #e06fb7;
+  z-index: -1;
+  bottom: -100%;
+  opacity: 0; }
+
+.cortina {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  background: #e06fb7;
+  opacity: 0; }
+
+/********** LOGO **********/
+.logoMob {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  left: 3%;
+  top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  z-index: 3;
+  background: #e06fb7; }
+
+.logoIsa {
+  display: none; }
+
+.bordaLogo1, .bordaLogo2, .bordaLogo3, .bordaLogo4 {
+  background: #e06fb7;
+  position: absolute;
+  opacity: 0; }
+
+.bordaLogo1 {
+  width: 0%;
+  height: 1px;
+  top: 0;
+  left: 0; }
+
+.bordaLogo2 {
+  width: 1px;
+  height: 0%;
+  right: 0;
+  top: 0; }
+
+.bordaLogo3 {
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  right: 0; }
+
+.bordaLogo4 {
+  width: 1px;
+  height: 0%;
+  left: 0;
+  bottom: 0; }
+
+.textoHome {
+  opacity: 0;
+  bottom: 15vh; }
+
+@media only screen and (min-width: 767px) {
+  .logoMob {
+    width: 70px;
+    height: 70px;
+    top: 30px; }
+  .logoI {
+    display: none; }
+  .logoIsa {
+    display: flex; } }
+
+/********** menu **********/
+.linkMenu {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  right: 3%;
+  top: 2%;
+  justify-content: center;
+  align-items: center;
+  z-index: 3; }
+
+.menu {
+  width: 20px;
+  height: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.risco1, .risco2, .risco3 {
+  width: 100%;
+  height: 1px;
+  background: #e06fb7; }
+
+.risco2 {
+  bottom: 0; }
+
+@media only screen and (min-width: 767px) {
+  .linkMenu {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #e06fb7;
+    top: 30px;
+    right: 30px; } }
+
+/********** Menu pagina **********/
+.menuPage {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #bc0173; }
+
+.menuPage h1 {
+  color: #fff;
+  font-size: 13vw;
+  line-height: 12vh; }
+
+.ctnDevMenu {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex; }
+
+.ctnDevMenu a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.boxDevMenu {
+  width: 150px; }
+
+.logoEfetivosMenu {
+  width: 20px; }
+
+@media only screen and (min-width: 767px) {
+  .menuPage h1 {
+    font-size: 10vw;
+    line-height: 11vh; }
+  .ctnDevMenu {
+    width: 300px;
+    height: 80px; }
+  .boxDevMenu {
+    width: 200px; }
+  .logoEfetivosMenu {
+    width: 40px; } }
+
+@media only screen and (min-width: 1365px) {
+  .menuPage h1 {
+    font-size: calc(1rem + 6.1vh);
+    line-height: 11vh; }
+  .ctnDevMenu {
+    width: 300px;
+    height: 80px; }
+  .boxDevMenu {
+    width: 200px; }
+  .logoEfetivosMenu {
+    width: 40px; } }
+
+/********** Home **********/
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #1d0e17;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.homePhoto {
+  height: 100%;
+  position: absolute;
+  opacity: .3;
+  z-index: -1; }
+
+.photoHome {
+  width: 100%;
+  height: 100vh;
+  background: url("/img/photo/modeltest.jpg") top no-repeat;
+  background-size: cover;
+  opacity: .3; }
+
+.textoHome {
+  line-height: 10vw;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  font-size: 12vw; }
+
+.home .button {
+  position: absolute;
+  bottom: 2%; }
+
+@media only screen and (min-width: 767px) {
+  .home .button {
+    bottom: 3%; } }
+
+@media only screen and (min-width: 1365px) {
+  .textoHome {
+    line-height: calc(6vw - -8px);
+    font-size: 8vw;
+    left: 11vw; } }
+
+/********** Slider **********/
+.ctnSlider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sliderH1 {
+  width: 70%;
+  height: 12vh;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e06fb7;
+  overflow: hidden; }
+
+.sliderH1 h1 {
+  position: absolute;
+  font-size: 12vw; }
+
+.sliderP {
+  display: none; }
+
+.photoSlider {
+  width: 80%;
+  height: 70vh;
+  position: absolute;
+  background: url("/img/photo/modeltest.jpg") top no-repeat;
+  background-size: cover; }
+
+.ctnSlider .button {
+  position: absolute;
+  bottom: 10px;
+  color: #e06fb7;
+  border-color: #e06fb7;
+  bottom: 2%; }
+
+.navegador {
+  display: none; }
+
+.ctnDev {
+  display: none; }
+
+.ctnSocial {
+  display: none; }
+
+.ctnTraco {
+  display: none; }
+
+@media only screen and (min-width: 767px) {
+  .bordaT {
+    position: absolute;
+    height: 1px;
+    top: 60px;
+    background: #e6e6e6;
+    width: calc(100% - 120px * 2); }
+  .bordaR {
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 90px * 2);
+    bottom: 60px;
+    right: 60px;
+    background: #e6e6e6; }
+  .bordaB1 {
+    position: absolute;
+    height: 1px;
+    right: 60px;
+    bottom: 60px;
+    background: #e6e6e6;
+    z-index: -1;
+    width: calc(100% / 2 - 180px); }
+  .bordaB2 {
+    position: absolute;
+    height: 1px;
+    left: 60px;
+    bottom: 60px;
+    background: #e6e6e6;
+    z-index: -1;
+    width: calc(100% / 2 - 180px); }
+  .bordaL {
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 90px * 2);
+    bottom: 60px;
+    left: 60px;
+    background: #e6e6e6; }
+  .ctnSlider .button {
+    bottom: 35px; }
+  .contadorNumeros {
+    display: flex;
+    position: absolute; }
+  .contadorNumero {
+    width: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + .2vw);
+    color: #767574; }
+  .contador {
+    position: fixed;
+    width: 20px;
+    height: 100px;
+    left: 50px;
+    overflow: hidden;
+    background: #fff; }
+  .contadorTotal {
+    border-top: 1px solid #767574;
+    bottom: 0; }
+  .navegador {
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-around; }
+  .navegadorUm {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bc0173;
+    color: #bc0173; }
+  .ctnSocial {
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    left: 50px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .5; }
+  .boxSocial {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .boxSocial img {
+    height: 100%; }
+  .ctnDev {
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: .5; }
+  .boxDev {
+    width: 150px; }
+  .boxDev img {
+    width: 150px; }
+  .logoEfetivos {
+    height: 30px; }
+  .logoEfetivos img {
+    height: 30px; } }
+
+@media only screen and (min-width: 1023px) {
+  .photoSlider {
+    width: 50%;
+    right: 0; }
+  .sliderH1 {
+    justify-content: flex-start;
+    left: 9%; }
+  .sliderP {
+    width: 40%;
+    height: 150px;
+    left: 11%;
+    bottom: 33%;
+    display: block;
+    position: absolute;
+    overflow: hidden; }
+  .sliderP p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 30px;
+    font-size: calc(.4rem + .718vw);
+    color: #929292; } }
+
+@media only screen and (min-width: 1365px) {
+  .ctnTraco {
+    width: 6vw;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 8vw;
+    top: calc(52% - -3px); }
+  .traco {
+    width: 100%;
+    height: 100%;
+    background: #e06fb7; }
+  .sliderH1 {
+    width: 40%;
+    height: 16vh;
+    bottom: 50%; }
+  .sliderH1 h1 {
+    font-size: 6vw; }
+  .sliderP {
+    width: 33%;
+    left: 15%;
+    top: calc(51% - 2px); }
+  .sliderP p {
+    line-height: 35px; }
+  .navegador {
+    bottom: 9vh; } }
