@@ -5,35 +5,50 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-   }
+  overflow-x: hidden; }
 
 h1 {
   font-family: "Cardo", serif;
   font-size: 2.5rem;
   color: #fff; }
 
-p {
-  font-family: "Archivo Narrow", sans-serif;
-  font-size: 14px;
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9rem;
   color: #fff; }
+
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.7rem;
+  color: #fff; }
+
+p {
+  font-family: "Asap", sans-serif;
+  font-size: .9375rem;
+  color: #fff;
+  letter-spacing: -0.01rem;
+  line-height: 1.9;
+  font-weight: 500; }
 
 .dpNone {
   display: none; }
 
 /********** ABRE MOBILE **********/
 .ctnHeader {
-  width: 95%;
+  width: 85%;
   height: 55px;
   position: fixed;
   top: 18px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .logoHome {
-  width: 150px;
-  height: 55px; }
+  height: 45px; }
 
 .logoHome img {
   height: 100%; }
@@ -44,7 +59,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #fff;
+  border: 1px solid #9c9c9c;
   border-radius: 2px; }
 
 .boxRisco {
@@ -61,28 +76,57 @@ p {
   background: #fff;
   vertical-align: middle; }
 
+.menuDesk {
+  display: none; }
+
+.menuDesk ul {
+  display: flex; }
+
+.menuDesk ul li a {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: .8375rem;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 40px;
+  letter-spacing: .03rem; }
+
 .main {
   width: 100%;
-  position: relative;
-   }
+  position: relative; }
+
+.foto1 {
+  background: url(../image/4.jpg) center no-repeat; }
+
+.foto2 {
+  background: url(../image/3.jpg) center no-repeat; }
+
+.foto3 {
+  background: url(../image/2.jpg) center no-repeat; }
+
+.foto4 {
+  background: url(../image/1.jpg) center no-repeat; }
+
+.foto5 {
+  background: url(../image/5.jpg) center no-repeat; }
 
 .back {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../image/bg.jpg) center no-repeat;
   background-size: cover;
   z-index: -999; }
 
 .ctnGeral {
-  max-width: 95%;
+  width: 95%;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 1440px; }
 
 .ctnCentral {
   position: relative;
@@ -91,6 +135,12 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+
+.boxTitulo {
+  align-self: flex-start; }
+
+.boxTitulo.pdLeft {
+  padding-left: 10%; }
 
 .boxTriagulo {
   height: 250px;
@@ -104,41 +154,185 @@ p {
 
 .ctnCentral h1 {
   width: 230px;
-  line-height: 50px; }
+  line-height: 42px; }
 
 .navegador {
   width: 250px;
   align-self: flex-start;
   display: flex;
   align-items: center;
-  margin-top: 20px;
   position: absolute;
-  bottom: 20px;
-  left: 29px; }
+  bottom: 4vh;
+  left: 6%; }
 
 .boxCirculo {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff; }
+  color: #fff;
+  box-shadow: 0px 0px 7px #fff; }
 
 .boxDescri {
-  width: 290px;
+  width: calc(100% - 40px);
   line-height: 24px;
-  padding: 20px 0 20px 0;
-  border-bottom: 1px solid #fff; }
+  padding: 20px 20px 0 20px; }
+
+.bordaHome {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 15px 0 15px 0;
+  opacity: .5; }
 
 .btnSaiba {
   align-self: flex-start;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 18px;
   cursor: poniter; }
 
 h1.wSobre {
-  width: 300px; }
+  width: calc(100% - 40px);
+  padding: 0 20px 0 20px; }
+
+/********** ABRE 768 **********/
+@media only screen and (min-width: 767px) {
+  .ctnGeral {
+    width: 92%; }
+  .ctnCentral h1 {
+    width: 600px;
+    font-size: 3.0rem;
+    line-height: 3.0rem; }
+  .trianguloDesk {
+    display: block;
+    right: 20px;
+    left: auto;
+    height: 150px;
+    top: -34px; }
+  .boxNumeral {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    display: block; }
+  .boxNumero {
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-align: right;
+    font-weight: 700;
+    padding: 5px; }
+  .boxNumeroTexto {
+    font-size: 1.3rem;
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    text-align: right;
+    font-weight: 700;
+    padding: 5px; }
+  .boxTriagulo.trianguloHome {
+    left: 3%;
+    top: -100px; }
+  .boxTriagulo.trianguloHome {
+    left: 3%;
+    top: -100px; }
+  h1.tituloHome {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 18%; }
+  .boxDescri p {
+    width: 70%; }
+  .trigger {
+    width: 92%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 3vh;
+    display: flex;
+    justify-content: flex-end; }
+  .ctnTrigger {
+    width: 80px; }
+  .boxTrigger {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    padding: 2px; }
+  .boxLinha, .boxtriggerCirculo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .boxLinha {
+    width: 30%; }
+  .boxtriggerCirculo {
+    width: 70%; }
+  .linhaTrigger {
+    width: 100%;
+    height: 2px;
+    background: #3e86c6; }
+  .triggerCirculo {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #fff; } }
+
+/********** ABRE 1024 **********/
+@media only screen and (min-width: 1023px) {
+  .menuMob {
+    display: none; }
+  .menuDesk {
+    display: flex; }
+  h1.tituloHome {
+    padding-left: 18%;
+    font-size: 4.0rem;
+    width: 80%;
+    line-height: 4.0rem; }
+  .boxTitulo {
+    width: 100%; } }
+
+/********** ABRE 1024 **********/
+@media only screen and (min-width: 1365px) {
+  .ctnHeader {
+    top: 30px; }
+  .ctnCentral h1 {
+    width: auto;
+    font-size: 4rem;
+    line-height: 4rem; }
+  .ctnCentral {
+    width: 90%; }
+  .boxDescri p {
+    width: 55%;
+    padding: 20px 0 20px 0; }
+  h5 {
+    font-size: .875rem; } }
+
+@media only screen and (min-width: 1919px) {
+  .ctnHeader {
+    top: 45px; }
+  .logoHome {
+    height: 60px; }
+  .boxDescri p {
+    width: 48%; }
+  .ctnCentral h1 {
+    font-size: 5rem;
+    line-height: 4.9rem; }
+  .boxTriagulo.trianguloHome {
+    left: 8%;
+    top: -108px;
+    height: 320px; }
+  .trigger {
+    width: 86%; }
+  .navegador {
+    left: 12%; }
+  .navegador2 {
+    width: 250px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 230px;
+    bottom: auto;
+    top: 85px; } }
 
 /********** FECHA MOBILE **********/
