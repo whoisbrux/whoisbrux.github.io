@@ -281,7 +281,8 @@ h1.wSobre {
     align-items: center;
     justify-content: center; }
   .boxLinha {
-    width: 50%; }
+    width: 50%;
+    justify-content: flex-start; }
   .boxtriggerCirculo {
     width: 70%; }
   .linhaTrigger {
