@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Home</title>
 	<meta charset="utf-8">
@@ -10,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600|Cardo:400,700|Oswald:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="body">
 	<!-- BORDAS ABRE -->
 	<div class="bordaT zindex">
@@ -25,13 +27,14 @@
 		<div class="bordaL1"></div>
 	</div>
 	<!-- BORDAS FECHA -->
-
 	<!-- HEADER ABRE -->
 	<div class="ctnHeader">
 		<!-- LOGO ABRE -->
-		<div class="logoHome">
-			<img src="image/logo2.svg" alt="">
-		</div>
+		<a href="index.html">
+			<div class="logoHome">
+				<img src="image/logo2.svg" alt="">
+			</div>
+		</a>
 		<!-- LOGO FEHCA -->
 		<!-- MENU MOBILE ABRE -->
 		<div class="menuMob">
@@ -41,21 +44,73 @@
 				<div class="risco"></div>
 			</div>
 		</div>
-		<!-- MENU MOBILE FECHA -->
 		<!-- MENU DESKTOP ABRE -->
-<div class="menuDesk">
-				<ul>
-					<li> <a href="index.html">HOME</a></li>
-					<li> <a href="sobre.html">SOBRE</a></li>
-					<li> <a href="especialidades.html">ESPECIALIDADES</a></li>
-					<li> <a href="profissionais.html">PROFISSIONAIS</a></li>
-					<li> <a href="galeria.html">GALERIA</a></li>
-					<li> <a href="materias.html">MATERIAS</a></li>
-					<li> <a href="contato.html">CONTATO</a></li>
-				</ul>
-			</div>
+		<div class="menuDesk">
+			<ul>
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="sobre.html">SOBRE</a>
+				</li>
+				<li>
+					<a href="#">ESPECIALIDADES</a>
+				</li>
+				<li>
+					<a href="profissionais.html">PROFISSIONAIS</a>
+				</li>
+				<li>
+					<a href="galeria.html">GALERIA</a>
+				</li>
+				<li>
+					<a href="#">MATERIAS</a>
+				</li>
+				<li>
+					<a href="#">CONTATO</a>
+				</li>
+			</ul>
+		</div>
 		<!-- MENU DESKTOP FECHA -->
 	</div>
+	<!-- ------------ MENU MODAL DESKTOP ABRE ------------ -->
+	<section class="menu-modal">
+		<div class="logoHome">
+			<img src="image/logo2.svg" alt="">
+		</div>
+		<div class="pf-ctn-fecha">
+			<buttom class="pf-botao">
+				<img src="image/icons/cross.svg" alt="">
+			</buttom>
+		</div>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="sobre.html">Sobre</a>
+			</li>
+			<li>
+				<a href="#">Especialidades</a>
+			</li>
+			<li>
+				<a href="profissionais.html">Profissionais</a>
+			</li>
+			<li>
+				<a href="galeria.html">Galeria</a>
+			</li>
+			<li>
+				<a href="#">Materias</a>
+			</li>
+			<li>
+				<a href="#">Contato</a>
+			</li>
+		</ul>
+		<a class="modal-dev" href="www.efetivos.com">
+			<img class="img-dev" src="image/icons/desenvolvimento2.svg">
+			<img class="img-logo" src="image/icons/efetivos2.svg">
+		</a>
+	</section>
+	<!-- ------------ MENU MODAL DESKTOP FECHA ------------ -->
 	<!-- HEADER FECHA -->
 	<!-- TRIGGER ABRE -->
 	<div class="trigger">
@@ -103,22 +158,24 @@
 		</div>
 	</div>
 	<!-- TRIGGER FECHA -->
-	<!-- MAIN ABRE -->	
+	<!-- MAIN ABRE -->
 	<main class="main">
-		<!-- SLIDER UM ABRE -->						
-		<div class="back foto1 tm1">
+		<!-- SLIDER UM ABRE -->
+		<div class="back foto1">
 			<div class="ctnGeral">
 				<div class="ctnCentral">
 					<div class="boxTitulo">
-						<h1 class="tituloHome">O instituto de nutrologia</h1>
+						<h1 class="tituloHome">O Instituto de Nutrologia</h1>
 						<h1 class="tituloHome">que faz a diferença</h1>
 						<div class="boxTriagulo trianguloHome ">
 							<img src="image/triangulo2.svg">
 						</div>
-					</div>	
+					</div>
 				</div>
-				<button class="navegador navegador2 button tm5">
-					<div class="boxCirculo"><img class="mg-lf-1 arrow-down" src="image/icons/arrow-down.svg"></div>
+				<button class="navegador navegador2 button  js-click-home">
+					<div class="boxCirculo">
+						<img class="mg-lf-1" src="image/icons/arrow-down.svg">
+					</div>
 					<div class="textoNavegador">
 						<h4>DESCUBRA PORQUE</h4>
 					</div>
@@ -127,29 +184,37 @@
 		</div>
 		<!-- SLIDER UM FECHA -->
 		<!-- SLIDER DOIS ABRE -->
-		<div class="back foto2 tm2">
+		<div class="back foto2">
 			<div class="ctnGeral">
 				<div class="ctnCentral">
 					<div class="boxNumeral dpNone">
-						<div  class="boxNumero">01</div>
-						<div  class="boxNumeroTexto">SOBRE</div>
+						<div class="boxNumero">01</div>
+						<div class="boxNumeroTexto">SOBRE</div>
 					</div>
 					<div class="boxTitulo">
 						<div class="boxTriagulo dpNone trianguloDesk">
 							<img src="image/triangulo2.svg">
 						</div>
-						<h1 class="wSobre">Tratamos a nutrologia</h1>
-						<h1 class="wSobre">com amor e paixão</h1>
+						<h1 class="wSobre">Você se compromete</h1>
+						<h1 class="wSobre">com sua saúde?</h1>
 					</div>
 					<div class="boxDescri">
 						<div class="bordaHome flexEnd"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Acreditamos que um estilo de vida mais saudável
+							proporciona maior bem estar e melhor qualidade de vida.</p>
 						<div class="bordaHome"></div>
 					</div>
-					<button class="btnSaiba button"><h5>SAIBA MAIS</h5><img class="js-h-rgt" src="image/icons/arrow-right.svg"></button>					
+					<button class="btnSaiba button">
+						<a href="sobre.html">
+							<h5>SAIBA MAIS</h5>
+							<img class="js-h-rgt" src="image/icons/arrow-right.svg">
+						</a>
+					</button>
 				</div>
-				<button class="navegador button tm2">
-					<div class="boxCirculo"><img class="mg-lf-1" src="image/icons/arrow-down.svg"></div>
+				<button class="navegador button js-click-home">
+					<div class="boxCirculo">
+						<img class="mg-lf-1" src="image/icons/arrow-down.svg">
+					</div>
 					<div class="textoNavegador">
 						<h4>QUEM SOMOS</h4>
 					</div>
@@ -158,29 +223,37 @@
 		</div>
 		<!-- SLIDER DOIS FECHA -->
 		<!-- SLIDER TRES ABRE -->
-		<div class="back foto3 tm3">
+		<div class="back foto3">
 			<div class="ctnGeral">
 				<div class="ctnCentral">
 					<div class="boxNumeral dpNone">
-						<div  class="boxNumero">02</div>
-						<div  class="boxNumeroTexto">ESPECIALIDADES</div>
+						<div class="boxNumero">02</div>
+						<div class="boxNumeroTexto">ESPECIALIDADES</div>
 					</div>
 					<div class="boxTitulo">
 						<div class="boxTriagulo dpNone trianguloDesk">
 							<img src="image/triangulo2.svg">
 						</div>
-						<h1 class="wSobre">Somos especialista e</h1>
-						<h1 class="wSobre">referência no que fazemos</h1>
+						<h1 class="wSobre">Profissionais qualificados</h1>
+						<h1 class="wSobre">e conhecimento sólido</h1>
 					</div>
 					<div class="boxDescri">
 						<div class="bordaHome flexEnd"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Uma equipe com formação sólida e atuação profissional
+							exemplar pronta para oferecer o tratamento ideal para você.</p>
 						<div class="bordaHome"></div>
 					</div>
-					<button class="btnSaiba button"><h5>NOSSOS SERVIÇOS</h5><img class="js-h-rgt" src="image/icons/arrow-right.svg"></button>	
+					<button class="btnSaiba button">
+						<a href="#">
+							<h5>NOSSOS SERVIÇOS</h5>
+							<img class="js-h-rgt" src="image/icons/arrow-right.svg">
+						</a>
+					</button>
 				</div>
-				<button class="navegador button tm3">
-					<div class="boxCirculo"><img class="mg-lf-1" src="image/icons/arrow-down.svg"></div>
+				<button class="navegador button js-click-home">
+					<div class="boxCirculo">
+						<img class="mg-lf-1" src="image/icons/arrow-down.svg">
+					</div>
 					<div class="textoNavegador">
 						<h4>NOSSAS ESPECIALIDADES</h4>
 					</div>
@@ -189,29 +262,37 @@
 		</div>
 		<!-- SLIDER TRES FECHA -->
 		<!-- SLIDER QUATRO ABRE -->
-		<div class="back foto4 tm4">
+		<div class="back foto4">
 			<div class="ctnGeral">
 				<div class="ctnCentral">
 					<div class="boxNumeral dpNone">
-						<div  class="boxNumero">03</div>
-						<div  class="boxNumeroTexto">GALERIA</div>
+						<div class="boxNumero">03</div>
+						<div class="boxNumeroTexto">GALERIA</div>
 					</div>
 					<div class="boxTitulo">
 						<div class="boxTriagulo dpNone trianguloDesk">
 							<img src="image/triangulo2.svg">
 						</div>
-						<h1 class="wSobre">Contamos com</h1>
-						<h1 class="wSobre">uma estrutura de ponta</h1>
+						<h1 class="wSobre">Um espaço pensado para</h1>
+						<h1 class="wSobre">te atender com excelência</h1>
 					</div>
 					<div class="boxDescri">
 						<div class="bordaHome flexEnd"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Infraestrutura projetada para melhor acolher nossos
+							clientes, uma ambiente diferenciado em localização estratégica</p>
 						<div class="bordaHome"></div>
 					</div>
-					<button class="btnSaiba button"><h5>VEJA AS FOTOS</h5><img class="js-h-rgt" src="image/icons/arrow-right.svg"></button>	
+					<button class="btnSaiba button">
+						<a href="galeria.html">
+							<h5>VEJA AS FOTOS</h5>
+							<img class="js-h-rgt" src="image/icons/arrow-right.svg">
+						</a>
+					</button>
 				</div>
-				<button class="navegador button tm5">
-					<div class="boxCirculo"><img class="mg-lf-1" src="image/icons/arrow-down.svg"></div>
+				<button class="navegador button js-click-home">
+					<div class="boxCirculo">
+						<img class="mg-lf-1" src="image/icons/arrow-down.svg">
+					</div>
 					<div class="textoNavegador">
 						<h4>GALERIA DE FOTOS</h4>
 					</div>
@@ -220,7 +301,7 @@
 		</div>
 		<!-- SLIDER QUATRO FECHA -->
 		<!-- SLIDER CINCO ABRE -->
-		<div class="back foto5 tm5">
+		<div class="back foto5">
 			<div class="ctnGeral">
 				<div class="ctnCentral">
 					<div class="boxNumeral dpNone">
@@ -229,20 +310,28 @@
 					</div>
 					<div class="boxTitulo">
 						<div class="boxTriagulo dpNone trianguloDesk">
-							<img src="image/triangulo2.svg">					
+							<img src="image/triangulo2.svg">
 						</div>
-						<h1 class="wSobre">Serviço inteligente</h1>
-						<h1 class="wSobre">com consistência</h1>
+						<h1 class="wSobre">Uma equipe sempre</h1>
+						<h1 class="wSobre">à sua disposição</h1>
 					</div>
 					<div class="boxDescri">
 						<div class="bordaHome flexEnd"></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Nosso staff está pronto para esclarecer dúvidas e te
+							auxiliar durante seu tratamento.</p>
 						<div class="bordaHome"></div>
 					</div>
-					<button class="btnSaiba button"><h5>FALE CONOSCO</h5><img class="js-h-rgt" src="image/icons/arrow-right.svg"></button>	
+					<button class="btnSaiba button">
+						<a href="#">
+							<h5>FALE CONOSCO</h5>
+							<img class="js-h-rgt" src="image/icons/arrow-right.svg">
+						</a>
+					</button>
 				</div>
-				<button class="navegador button tm5">
-					<div class="boxCirculo"><img class="js-h-rgt" src="image/icons/arrow-right.svg"></div>
+				<button class="navegador button js-click-home">
+					<div class="boxCirculo">
+						<img src="image/icons/arrow-right.svg">
+					</div>
 					<div class="textoNavegador">
 						<h4>ENTRE EM CONTATO</h4>
 					</div>
@@ -256,4 +345,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>

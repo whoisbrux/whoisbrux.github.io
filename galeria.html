@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Galeria</title>
 	<meta charset="utf-8">
@@ -7,16 +8,69 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/galeria.css">
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600|Cardo:400,700|Oswald:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/galeria.css">
 </head>
+
 <body class="body-glr">
-	<!-- HEADER ABRE -->
-	<div class="ctnHeader ">
-		<!-- LOGO ABRE -->
+	<!-- ------------ TRIGGER MODAL ABRE ------------ -->
+	<div class="trigger-modal">
+		<div class="js-trigger-modal">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!-- ------------ TRIGGER MODAL FECHA ------------ -->
+	<!-- ------------ MENU MODAL DESKTOP ABRE ------------ -->
+	<section class="menu-modal">
 		<div class="logoHome">
 			<img src="image/logo2.svg" alt="">
 		</div>
+		<div class="pf-ctn-fecha">
+			<buttom class="pf-botao">
+				<img src="image/icons/cross.svg" alt="">
+			</buttom>
+		</div>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="sobre.html">Sobre</a>
+			</li>
+			<li>
+				<a href="#">Especialidades</a>
+			</li>
+			<li>
+				<a href="profissionais.html">Profissionais</a>
+			</li>
+			<li>
+				<a href="galeria.html">Galeria</a>
+			</li>
+			<li>
+				<a href="#">Materias</a>
+			</li>
+			<li>
+				<a href="#">Contato</a>
+			</li>
+		</ul>
+		<a class="modal-dev" href="www.efetivos.com">
+			<img class="img-dev" src="image/icons/desenvolvimento2.svg">
+			<img class="img-logo" src="image/icons/efetivos2.svg">
+		</a>
+	</section>
+	<!-- ------------ MENU MODAL DESKTOP FECHA ------------ -->
+	<!-- HEADER ABRE -->
+	<div class="ctnHeader ">
+		<!-- LOGO ABRE -->
+		<a href="index.html">
+			<div class="logoHome">
+				<img src="image/logo2.svg" alt="">
+			</div>
+		</a>
 		<!-- LOGO FEHCA -->
 		<!-- MENU MOBILE ABRE -->
 		<div class="menuMob">
@@ -30,13 +84,27 @@
 		<!-- MENU DESKTOP ABRE -->
 		<div class="menuDesk">
 			<ul>
-				<li> <a href="index.html">HOME</a></li>
-				<li> <a href="sobre.html">SOBRE</a></li>
-				<li> <a href="especialidades.html">ESPECIALIDADES</a></li>
-				<li> <a href="profissionais.html">PROFISSIONAIS</a></li>
-				<li> <a href="galeria.html">GALERIA</a></li>
-				<li> <a href="materias.html">MATERIAS</a></li>
-				<li> <a href="contato.html">CONTATO</a></li>
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="sobre.html">SOBRE</a>
+				</li>
+				<li>
+					<a href="#">ESPECIALIDADES</a>
+				</li>
+				<li>
+					<a href="profissionais.html">PROFISSIONAIS</a>
+				</li>
+				<li>
+					<a href="galeria.html" #>GALERIA</a>
+				</li>
+				<li>#
+					<a href="#">MATERIAS</a>
+				</li>
+				<li>
+					<a href="#">CONTATO</a>
+				</li>
 			</ul>
 		</div>
 		<!-- MENU DESKTOP FECHA -->
@@ -59,125 +127,154 @@
 		<!-- BORDAS FECHA -->
 		<div class="ctnGeral jc-end">
 			<div class="i-ctn">
-				<div class="i-triangulo"> <img src="image/icons/i-triangulo.svg"></div>
+				<div class="i-triangulo">
+					<img src="image/icons/i-triangulo.svg">
+				</div>
 				<h1 class="i-title als-fxt">Galeria</h1>
-				<button class="i-scroll button als-fxt ">SCROLL<img class="mg-lf-10 arrow-down" src="image/icons/arrow-down.svg"></button>
+				<button class="i-scroll button als-fxt ">SCROLL
+					<img class="mg-lf-10 arrow-down" src="image/icons/arrow-down.svg">
+				</button>
 			</div>
 		</div>
 	</div>
 	<!-- BANNER FECHA -->
-	<!-- GALERIA INNER ABRE -->
-	<section class="glr-inner">
-		<!-- GALERIA BOTAO ABRE -->
-		<div class="pf-ctn-fecha glr-fecha">
-			<p>Fecha</p>
-			<buttom class="pf-botao">X</buttom>
-		</div>
-		<!-- GALERIA BOTAO FECHA -->		
-		<!-- GALERIA BORDAS ABRE -->
 
-		<div class="pf-borda-t"></div>
-		<div class="pf-borda-r"></div>
-		<div class="pf-borda-b"></div>
-		<div class="pf-borda-l"></div>
-
-		<!-- GALERIA BORDAS FECHA -->
-
-		<!-- GALERIA SETA ABRE -->
-		<div class="glr-seta">
-			<div class="glr-box-seta glr-invert"><img src="image/icons/seta.svg"></div>
-			<div class="glr-box-seta"><img src="image/icons/seta.svg"></div>
-		</div>
-
-
-
-		<!-- GALERIA SETA FECHA -->
-		<div class="glr-inner-geral ">
-			<!-- GALERIA FOTOS ABRE -->
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto1"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto2"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto3"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto4"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto5"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto6"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto7"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto8"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto9"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto10"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto11"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto12"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto13"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto14"></div></div>
-			<div class="glr-inner-box-foto"><div class="glr-inner-foto glrfoto15"></div></div>
-			<!-- GALERIA FOTOS FECHA -->
-		</div>
-	</section>
-	<!-- GALERIA INNER FECHA -->
-	<!-- GALERIA ABRE -->
-	<main class="glr-main scroll-galeria">
-		<!-- NAVEGADOR ABRE -->
-		<div class="glr-nav btn1"><img src="image/icons/back-arrow.svg"></div>
-		<div class="glr-nav glr-rgt-30 btn2"><img src="image/icons/right-arrow.svg"></div>
-		<!-- NAVEGADOR FECHA -->
-		<!-- TRIGGER ABRE -->
-		<div class="glr-trigger">
-			<div class="glr-trigger-box "><div class="glr-trigger-cir 00vh"></div></div>
-			<div class="glr-trigger-box "><div class="glr-trigger-cir 100vh"></div></div>
-			<div class="glr-trigger-box "><div class="glr-trigger-cir 200vh"></div></div>
-			<div class="glr-trigger-box "><div class="glr-trigger-cir 300vh"></div></div>
-			<div class="glr-trigger-box "><div class="glr-trigger-cir 400vh"></div></div>
-		</div>
-		<!-- TRIGGER FECHA -->
-		<section class="glr-geral">
-			<div class="glr-box 0vh">
-
-				<div class="glr-ctn-foto">
-					<div class="glr-foto 0vw glrfoto1"></div>
-					<div class="glr-foto 100vw glrfoto2"></div>
-					<div class="glr-foto 200vw glrfoto3"></div>
-				</div>
-			</div>
-
-
-			<div class="glr-box 100vh">
-				<div class="glr-ctn-foto">
-					<div class="glr-foto 300vw glrfoto4"></div>
-					<div class="glr-foto 400vw glrfoto5"></h1></div>
-					<div class="glr-foto 500vw glrfoto6"></div>
-				</div>
-			</div>
-
-			<div class="glr-box 200vh">
-				<div class="glr-ctn-foto">
-					<div class="glr-foto 600vw glrfoto7"></div>
-					<div class="glr-foto 700vw glrfoto8"></div>
-					<div class="glr-foto 800vw glrfoto9"></div>
-				</div>
-			</div>
-
-			<div class="glr-box 300vh">
-				<div class="glr-ctn-foto">
-					<div class="glr-foto 900vw glrfoto10"></div>
-					<div class="glr-foto 1000vw glrfoto11"></div>
-					<div class="glr-foto 1100vw glrfoto12"></div>
-				</div>
-			</div>
-
-			<div class="glr-box 400vh">
-				<div class="glr-ctn-foto">
-					<div class="glr-foto 1200vw glrfoto13">
-						<div class="pf-hover-1 js-pf-hover-3">
-							<div class="pf-hover-2"></div>
-							<p class="pf-hover-p">visualizar</p>
-						</div>
+	<!-- --------------- CTN SLIDE TRIGGER ------------- -->
+	<div class="scroll-galeria ctn-slide-trigger">
+		<div class="holder-slide-trg">
+			<div class="ctn-galeria">
+				<div class="box-photo-galeria-trg bp1">
+					<div class="photo-trg">
 					</div>
-					<div class="glr-foto 1300vw glrfoto14"></div>
-					<div class="glr-foto 1400vw glrfoto15"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp2">
+					<div class="photo-trg">
+					</div>
+				</div>
+				<div class="box-photo-galeria-trg bp3">
+					<div class="photo-trg">
+					</div>
 				</div>
 			</div>
-		</section>
+			<div class="ctn-galeria">
+				<div class="box-photo-galeria-trg bp4">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp5">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp6">
+					<div class="photo-trg"></div>
+				</div>
+			</div>
+			<div class="ctn-galeria">
+				<div class="box-photo-galeria-trg bp7">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp8">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp9">
+					<div class="photo-trg"></div>
+				</div>
+			</div>
+			<div class="ctn-galeria">
+				<div class="box-photo-galeria-trg bp10">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp11">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp12">
+					<div class="photo-trg"></div>
+				</div>
+			</div>
+			<div class="ctn-galeria">
+				<div class="box-photo-galeria-trg bp13">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp14">
+					<div class="photo-trg"></div>
+				</div>
+				<div class="box-photo-galeria-trg bp15">
+					<div class="photo-trg"></div>
+				</div>
+			</div>
+		</div>
+		<!-- --------------- navegador ------------- -->
+		<div class="galeria-navegador">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<!-- --------------- navegador ------------- -->
+	</div>
+	<!-- --------------- CTN LIGHTBOX ------------- -->
+	<div class="ctn-slide-lightbox">
+		<div class="pf-ctn-fecha">
+			<buttom class="pf-botao">
+				<img src="image/icons/cross.svg" alt="">
+			</buttom>
+		</div>
+		<div class="lightbox-navegador left-arrow">
+			<img src="image/icons/left-arrow.svg" alt="">
+		</div>
+		<div class="lightbox-navegador right-arrow">
+			<img src="image/icons/right-arrow1.svg" alt="">
+		</div>
 
-	</main>
+		<div class="holder-slide-lightbox">
+			<div class="box-photo-galeria-lb bp1">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp2">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp3">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp4">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp5">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp6">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp7">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp8">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp9">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp10">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp11">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp12">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp13">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp14">
+				<div class="photo-trg"></div>
+			</div>
+			<div class="box-photo-galeria-lb bp15">
+				<div class="photo-trg">
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- FOOTER ABRE -->
 	<footer class="footer mg-tp-0">
 		<section class="sec-footer">
@@ -190,37 +287,70 @@
 			<!-- LOGO FEHCA -->
 			<div class="menu-footer">
 				<ul>
-					<a href="#"><li> HOME</li></a>
-					<a href="#"><li>SOBRE</li></a>
-					<a href="#"><li>ESPECIALIDADES</li></a>
-					<a href="#"><li>PROFISSIONAIS</li></a>
-					<a href="#"><li>GALERIA</li></a>
-					<a href="#"><li>MATERIAS</li></a>
-					<a href="#"><li>CONTATO</li></a>
+					<a href="index.html">
+						<li> HOME</li>
+					</a>
+					<a href="sobre.html">
+						<li>SOBRE</li>
+					</a>
+					<a href="">
+						<li>ESPECIALIDADES</li>
+					</a>
+					<a href="profissionais.html">
+						<li>PROFISSIONAIS</li>
+					</a>
+					<a href="galeria.html">
+						<li>GALERIA</li>
+					</a>
+					<a href="">
+						<li>MATERIAS</li>
+					</a>
+					<a href="">
+						<li>CONTATO</li>
+					</a>
 				</ul>
 			</div>
 			<div class="f-social">
 				<p>SOCIAL</p>
 				<ul>
-					<a href=""><li><img src="image/icons/facebook.svg" alt=""></li></a>
-					<a href=""><li><img src="image/icons/twitter.svg" alt=""></li></a>
-					<a href=""><li><img src="image/icons/instagram.svg" alt=""></li></a>
+					<a href="https://www.fb.me/imnutrologia" target="_blank">
+						<li>
+							<img src="image/icons/facebook.svg" alt="">
+						</li>
+					</a>
+					<a href="">
+						<li>
+							<img src="image/icons/twitter.svg" alt="">
+						</li>
+					</a>
+					<a href="https://www.instagram.com/imnutrologia/" target="_blank">
+						<li>
+							<img src="image/icons/instagram.svg" alt="">
+						</li>
+					</a>
 				</ul>
 			</div>
 			<div class="i-copy">
 				<p>Copyright © 2018. Instituto Mineiro de Nutrologia</p>
-				<a href="www.efetivos.com"><div class="ctn-dev">
-					<div class="i-dev"><img src="image/icons/desenvolvimento.svg"></div>
-					<div class="i-efetivos"><img src="image/icons/efetivos.svg"></div>
+				<a href="http://www.efetivos.com" target="_blank">
+					<div class="ctn-dev">
+						<div class="i-dev">
+							<img src="image/icons/desenvolvimento.svg">
+						</div>
+						<div class="i-efetivos">
+							<img src="image/icons/efetivos.svg">
+						</div>
 				</a>
-			</div>
+				</div>
 		</section>
 	</footer>
 	<!-- FOOTER FECHA -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+	<script type="text/javascript" src="js/bundle.js"></script>
+	<script type="text/javascript" src="js/galeria2.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
+
 </html>
