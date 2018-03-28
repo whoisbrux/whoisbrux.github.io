@@ -347,6 +347,11 @@ a:focus {
   z-index: 1;
 }
 
+.navegador2 {
+  bottom: 15vh;
+  left: 24vw;
+}
+
 .textoNavegador {
   margin-left: 5px;
 }
@@ -529,6 +534,11 @@ h1.wSobre {
     height: 5px;
     border-radius: 50%;
     border: 1px solid #fff;
+  }
+
+  .navegador2 {
+    bottom: 4vh;
+    left: 0px;
   }
 
   .bordaT {
