@@ -249,10 +249,12 @@ h1 {
     align-items: center;
     width: 100vw;
     height: 80vh;
-    margin-top: 17vh; }
+    margin-top: 17vh;
+    position: relative; }
     .ctn-slide-trigger .box-photo-galeria-trg .photo-trg {
       width: 90%;
-      height: 100%; }
+      height: 100%;
+      position: relative; }
 
 @media only screen and (min-width: 1023px) {
   .ctn-slide-trigger {
@@ -351,63 +353,63 @@ h1 {
   right: 12vw; }
 
 .bp1 .photo-trg {
-  background: url(../image/foto1.png) center no-repeat;
+  background: url(../image/foto1.jpg) center no-repeat;
   background-size: cover; }
 
 .bp2 .photo-trg {
-  background: url(../image/foto2.png) center no-repeat;
+  background: url(../image/foto2.jpg) center no-repeat;
   background-size: cover; }
 
 .bp3 .photo-trg {
-  background: url(../image/foto3.png) center no-repeat;
+  background: url(../image/foto3.jpg) center no-repeat;
   background-size: cover; }
 
 .bp4 .photo-trg {
-  background: url(../image/foto4.png) center no-repeat;
+  background: url(../image/foto4.jpg) center no-repeat;
   background-size: cover; }
 
 .bp5 .photo-trg {
-  background: url(../image/foto5.png) center no-repeat;
+  background: url(../image/foto5.jpg) center no-repeat;
   background-size: cover; }
 
 .bp6 .photo-trg {
-  background: url(../image/foto6.png) center no-repeat;
+  background: url(../image/foto6.jpg) center no-repeat;
   background-size: cover; }
 
 .bp7 .photo-trg {
-  background: url(../image/foto7.png) center no-repeat;
+  background: url(../image/foto7.jpg) center no-repeat;
   background-size: cover; }
 
 .bp8 .photo-trg {
-  background: url(../image/foto8.png) center no-repeat;
+  background: url(../image/foto8.jpg) center no-repeat;
   background-size: cover; }
 
 .bp9 .photo-trg {
-  background: url(../image/foto9.png) center no-repeat;
+  background: url(../image/foto9.jpg) center no-repeat;
   background-size: cover; }
 
 .bp10 .photo-trg {
-  background: url(../image/foto10.png) center no-repeat;
+  background: url(../image/foto10.jpg) center no-repeat;
   background-size: cover; }
 
 .bp11 .photo-trg {
-  background: url(../image/foto11.png) center no-repeat;
+  background: url(../image/foto11.jpg) center no-repeat;
   background-size: cover; }
 
 .bp12 .photo-trg {
-  background: url(../image/foto12.png) center no-repeat;
+  background: url(../image/foto12.jpg) center no-repeat;
   background-size: cover; }
 
 .bp13 .photo-trg {
-  background: url(../image/foto13.png) center no-repeat;
+  background: url(../image/foto13.jpg) center no-repeat;
   background-size: cover; }
 
 .bp14 .photo-trg {
-  background: url(../image/foto14.png) center no-repeat;
+  background: url(../image/foto14.jpg) center no-repeat;
   background-size: cover; }
 
 .bp15 .photo-trg {
-  background: url(../image/foto15.png) center no-repeat;
+  background: url(../image/foto15.jpg) center no-repeat;
   background-size: cover; }
 
 @media only screen and (min-width: 1023px) {

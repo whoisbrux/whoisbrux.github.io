@@ -22,9 +22,11 @@ a,
 .glr-trigger-box,
 .glr-foto,
 .p-box-foto {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0); }
 
-.zindex, button.i-scroll.button.als-fxt {
+.zindex,
+button.i-scroll.button.als-fxt {
   z-index: 1; }
 
 .button {
@@ -33,9 +35,12 @@ a,
   cursor: pointer; }
 
 h1 {
-  font-family: "Cardo", serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 2.5rem;
   color: #fff; }
+
+h2 {
+  font-family: "Philosopher", sans-serif; }
 
 h4 {
   font-family: "Oswald", sans-serif;
@@ -79,6 +84,15 @@ a:focus {
   outline-offset: 0px; }
 
 /********** ABRE MOBILE **********/
+.cortina {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 20;
+  top: 0;
+  left: 0; }
+
 .ctnHeader {
   width: 85%;
   height: 55px;
@@ -163,7 +177,7 @@ a:focus {
   margin-left: 10%; }
 
 .menu-modal ul li a {
-  font-family: "Cardo", serif;
+  font-family: "Philosopher", sans-serif;
   color: #fff;
   font-size: 1.5rem;
   line-height: 3rem; }
@@ -203,15 +217,15 @@ a:focus {
   position: relative; }
 
 .foto1 {
-  background: url(/image/111.png) center no-repeat;
+  background: url(/image/bg1.png) center no-repeat;
   background-size: cover; }
 
 .foto2 {
-  background: url(/image/222.png) center no-repeat;
+  background: url(/image/bg2.png) center no-repeat;
   background-size: cover; }
 
 .foto3 {
-  background: url(/image/666.png) center no-repeat;
+  background: url(/image/bg3.png) center no-repeat;
   background-size: cover; }
 
 .foto4 {
@@ -219,7 +233,7 @@ a:focus {
   background-size: cover; }
 
 .foto5 {
-  background: url(/image/bg1.png) center no-repeat;
+  background: url(/image/bg5.png) center no-repeat;
   background-size: cover; }
 
 .back {
@@ -271,7 +285,7 @@ a:focus {
   height: 100%; }
 
 .ctnCentral h1 {
-  width: 230px;
+  width: 260px;
   line-height: 42px; }
 
 .navegador {
@@ -1120,7 +1134,7 @@ img.arrow-down {
   .p-box-foto {
     width: 100%;
     height: 50vh; }
-  .pf-hover-1 {
+  .pf-hover-1, .pf-hover {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1131,10 +1145,10 @@ img.arrow-down {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .pf-hover-1 p {
+  .pf-hover-1 p, .pf-hover-texto {
     text-transform: uppercase;
     text-align: center; }
-  .pf-hover-2 {
+  .pf-hover-2, .pf-hover-quadro {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1564,66 +1578,116 @@ img.arrow-down {
   align-items: center; }
 
 .glrfoto1 {
-  background: url(/image/foto1.png) center no-repeat;
+  background: url(/image/foto1.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto2 {
-  background: url(/image/foto2.png) center no-repeat;
+  background: url(/image/foto2.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto3 {
-  background: url(/image/foto3.png) center no-repeat;
+  background: url(/image/foto3.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto4 {
-  background: url(/image/foto4.png) center no-repeat;
+  background: url(/image/foto4.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto5 {
-  background: url(/image/foto5.png) center no-repeat;
+  background: url(/image/foto5.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto6 {
-  background: url(/image/foto6.png) center no-repeat;
+  background: url(/image/foto6.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto7 {
-  background: url(/image/foto7.png) center no-repeat;
+  background: url(/image/foto7.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto8 {
-  background: url(/image/foto8.png) center no-repeat;
+  background: url(/image/foto8.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto9 {
-  background: url(/image/foto9.png) center no-repeat;
+  background: url(/image/foto9.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto10 {
-  background: url(/image/foto10.png) center no-repeat;
+  background: url(/image/foto10.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto11 {
-  background: url(/image/foto11.png) center no-repeat;
+  background: url(/image/foto11.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto12 {
-  background: url(/image/foto12.png) center no-repeat;
+  background: url(/image/foto12.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto13 {
-  background: url(/image/foto13.png) center no-repeat;
+  background: url(/image/foto13.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto14 {
-  background: url(/image/foto14.png) center no-repeat;
+  background: url(/image/foto14.jpg) center no-repeat;
   background-size: cover; }
 
 .glrfoto15 {
-  background: url(/image/foto15.png) center no-repeat;
+  background: url(/image/foto15.jpg) center no-repeat;
   background-size: cover; }
 
 .btnSaiba img {
   height: 10px;
   margin-left: 18px;
   opacity: 0.8; }
+
+@media only screen and (min-width: 0px) {
+  .d-flex-fl-cl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .d-flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .ps-ab-top-0 {
+    position: absolute;
+    top: 0; }
+  .contato .i-box-foto {
+    margin: 1vh auto; }
+  .contato .i-ctn-nosso {
+    margin-top: 0; }
+  .contato .i-texto-nosso p {
+    margin-bottom: 1vh; } }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .dp-none-768 {
+    display: none; } }
+
+@media only screen and (min-width: 0px) {
+  .email {
+    padding: 20px;
+    text-align: justify;
+    color: #808080;
+    margin-bottom: 3vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    display: block; }
+  .contato .f-social ul {
+    align-self: flex-start;
+    margin-bottom: calc(2vh + 2px);
+    margin-left: 10px; }
+  .btn-formulario {
+    width: 200px;
+    height: 70px;
+    background: #2b3d63;
+    border: 1px solid #000;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 0.1rem; }
+  .mg-top-7vh {
+    margin-top: 7vh; } }
