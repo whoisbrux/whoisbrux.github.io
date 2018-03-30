@@ -520,12 +520,12 @@ $(".trg-slide-trg").click(function() {
 $(".linktag").hover(
   function() {
     var class2 = $(this).attr("class").split(" ")[1];
-    TweenMax.to("."+class2+" img", .3, {opacity: 1, y: 9});
+    TweenMax.to("."+class2+" img", 1, {ease: Elastic.easeOut.config(2, 0.5),opacity: 1, y: 9});
     console.log("."+class2+" img")
   },
   function() {
     var class2 = $(this).attr("class").split(" ")[1];
-    TweenMax.to("."+class2+" img", .3, {opacity: 0, y:-10});
+    TweenMax.to("."+class2+" img", .3, {ease: Elastic.easeOut.config(1, 1),opacity: 0, y:-10});
    console.log("."+class2+" img")
   }
 );
