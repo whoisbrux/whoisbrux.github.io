@@ -2,7 +2,7 @@
 $ft1: "Cardo", serif;
 $ft2: "Oswald", sans-serif;
 $ft3: "Montserrat", sans-serif;
-$ft4: 'Philosopher', sans-serif;
+$ft4: "Philosopher", sans-serif;
 $cor2: #fff;
 $azul1: #0e2e60;
 $azul2: #0078ff;
@@ -1476,6 +1476,13 @@ img.arrow-down {
   color: $azulmedio;
 }
 
+@media only screen and (max-width: 766px) {
+  .pf-hover {
+    display: none;
+  }
+}
+
+
 @media only screen and (min-width: 767px) {
   .p-wrap {
     flex-direction: row;
@@ -1508,7 +1515,8 @@ img.arrow-down {
     height: 50vh;
   }
 
-  .pf-hover-1, .pf-hover {
+  .pf-hover-1,
+  .pf-hover {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1521,12 +1529,14 @@ img.arrow-down {
     justify-content: center;
   }
 
-  .pf-hover-1 p, .pf-hover-texto {
+  .pf-hover-1 p,
+  .pf-hover-texto {
     text-transform: uppercase;
     text-align: center;
   }
 
-  .pf-hover-2, .pf-hover-quadro {
+  .pf-hover-2,
+  .pf-hover-quadro {
     position: absolute;
     top: 10px;
     right: 10px;
