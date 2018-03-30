@@ -339,7 +339,11 @@ a:focus {
   padding: 10px 10px 10px 18px;
   cursor: poniter;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: #3e86c6; }
+
+.btnSaiba h5 {
+  color: #3e86c6; }
 
 .btnSaiba a {
   display: flex;
@@ -431,7 +435,7 @@ h1.wSobre {
     width: 70%; }
   .linhaTrigger {
     width: 0%;
-    height: 4px;
+    height: 2px;
     background: #3e86c6; }
   .triggerCirculo {
     width: 5px;

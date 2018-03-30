@@ -12,6 +12,7 @@ $bg: #062540;
 $azulmedio: #104674;
 $azulescuro: #141d29;
 $textoP: 0.9rem;
+$cooooo: #000000;
 /********** FECHA VARS **********/
 .body {
   display: flex;
@@ -411,6 +412,11 @@ a:focus {
   cursor: poniter;
   display: flex;
   align-items: center;
+  color: #3e86c6;
+}
+
+.btnSaiba h5 {
+  color: #3e86c6;
 }
 
 .btnSaiba a {
@@ -541,7 +547,7 @@ h1.wSobre {
 
   .linhaTrigger {
     width: 0%;
-    height: 4px;
+    height: 2px;
     background: #3e86c6;
   }
 
