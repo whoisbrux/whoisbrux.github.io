@@ -179,6 +179,15 @@ a:focus {
   display: none;
 }
 
+.menuDesk img {
+  height: 26px;
+  top: -10px;
+  left: -7px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
 .menuDesk ul {
   display: flex;
 }
@@ -191,7 +200,15 @@ a:focus {
   padding: 10px;
   margin-left: 20px;
   letter-spacing: 0.08rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
+
 
 /* MENU MODAL */
 
@@ -1553,6 +1570,12 @@ img.arrow-down {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  p.pf-hover-p , p.pf-hover-texto {
+    font-family: $ft2;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
   }
 
   .pf-hover-1 p,
