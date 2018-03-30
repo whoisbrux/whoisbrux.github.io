@@ -51,10 +51,12 @@ h1 {
     width: 100vw;
     height: 80vh;
     margin-top: 17vh;
+    position: relative;
 
     .photo-trg {
       width: 90%;
       height: 100%;
+      position: relative;
     }
   }
 }
@@ -187,7 +189,7 @@ h1 {
 $photo: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
 @each $item in $photo {
   .bp#{$item} .photo-trg {
-    background: url(../image/foto#{$item}.png) center no-repeat;
+    background: url(../image/foto#{$item}.jpg) center no-repeat;
     background-size: cover;
   }
 }
