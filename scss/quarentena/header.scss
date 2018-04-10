@@ -1,0 +1,328 @@
+/********** ABRE VARS **********/
+$ft1: "Cardo", serif;
+$ft2: "Oswald", sans-serif;
+$ft3: "Montserrat", sans-serif;
+$ft4: "Philosopher", sans-serif;
+$cor2: #fff;
+$azul1: #0e2e60;
+$azul2: #0078ff;
+$cinzaP: #808080;
+$cinzaBorda: #888888;
+$bg: #062540;
+$azulmedio: #104674;
+$azulescuro: #141d29;
+$textoP: 0.9rem;
+$cooooo: #000000;
+/********** FECHA VARS **********/
+
+
+
+/********** WP HERADER ABRE **********/
+.logoHome {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.i-geral {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ctnHeader {
+  width: 85%;
+  height: 55px;
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoHome {
+  height: 35px;
+}
+
+.logoHome img {
+  height: 100%;
+}
+
+.menu-modal .logoHome {
+  position: absolute;
+  top: calc(6vh + 4px);
+  left: 7%;
+}
+
+.menuMob {
+  width: 45px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9c9c9c;
+  border-radius: 2px;
+  position: fixed;
+  top: 28px;
+  right: 30px;
+}
+
+.boxRisco {
+  width: 17px;
+  height: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.risco {
+  width: 100%;
+  height: 1px;
+  background: rgb(167, 167, 167);
+  vertical-align: middle;
+}
+
+.menuDesk {
+  display: none;
+}
+
+.menuDesk img {
+  height: 26px;
+  top: -10px;
+  left: -7px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.menuDesk ul {
+  display: flex;
+}
+
+.menuDesk ul li a {
+  font-family: $ft2;
+  color: $cor2;
+  font-size: .8rem;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 20px;
+  letter-spacing: .08rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i-banner {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.i-borda-t {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.i-borda-r {
+  width: 10px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.i-borda-b {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.i-borda-l {
+  width: 10px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.i-borda-t div.bord {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.i-borda-r div.bord {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.i-borda-b div.bord {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.i-borda-l div.bord {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.ctnGeral {
+  width: 95%;
+  height: 100vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1340px;
+}
+
+.i-ctn {
+  width: 200px;
+  height: 195px;
+  position: relative;
+  align-self: flex-start;
+  margin-bottom: 16vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.i-triangulo {
+  height: 170px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.i-triangulo img {
+  height: 100%;
+  opacity: .6;
+}
+
+.i-title {
+  font-size: 4rem;
+  align-self: flex-end;
+  padding: 5px;
+  line-height: 6rem;
+}
+
+.als-fxt {
+  align-self: flex-start;
+}
+
+.i-scroll {
+  width: 120px;
+  font-size: $textoP;
+  font-family: $ft2;
+  align-self: flex-end;
+  padding: 5px;
+  color: #fff;
+  letter-spacing: .2px;
+}
+
+.mg-lf-10 {
+  margin-left: 10px;
+}
+@media only screen and (min-width: 767px) {
+  .ctnGeral {
+    width: 92%;
+  }
+
+  .i-ctn {
+    margin-left: 10%;
+    margin-bottom: 12vh;
+  }
+}
+
+/********** ABRE 1024 **********/
+@media only screen and (min-width: 1023px) {
+  .ctnHeader {
+    height: 120px;
+    top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .menuMob {
+    display: none;
+  }
+
+  .menuDesk {
+    display: flex;
+  }
+
+  .i-banner {
+    margin-bottom: 50px;
+  }
+
+  .i-ctn {
+    width: 260px;
+    height: 270px;
+  }
+
+  .i-triangulo {
+    height: 230px;
+    left: -80px;
+  }
+
+  .i-title {
+    font-size: 6.25rem;
+    padding: 17px 17px 5px;
+  }
+
+  .i-scroll {
+    width: 180px;
+    font-size: $textoP;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 1365px) {
+  .i-banner {
+    margin-bottom: 150px;
+  }
+
+  .i-ctn {
+    width: 500px;
+    height: 270px;
+    margin-bottom: 15vh;
+  }
+
+  .i-triangulo {
+    height: 280px;
+    left: -115px;
+  }
+}
+@media only screen and (min-width: 1919px) {
+  .logoHome {
+    height: 50px;
+  }
+
+  .menuDesk ul li a {
+    margin-left: 40px;
+  }
+}
+
+/********** WP HERADER ABRE **********/
