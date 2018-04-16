@@ -6,6 +6,7 @@ window.onload = function () {
 var time = .8;
 
 var tlInit = new TimelineMax({ id: 'tlIntro' })
+
     .from('.ctn-bg', time, { autoAlpha: 0, scale: 1.08 })
     .from('.ctn-svg', time, { autoAlpha: 0 })
     .from('#tbase', time * 3, {delay: .2, autoAlpha: 0, drawSVG: '0%', ease: Power3.easeOut })
