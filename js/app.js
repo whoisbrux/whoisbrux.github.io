@@ -552,7 +552,7 @@ var tlintroPage = new TimelineMax()
 
 var tlintroPage = new TimelineMax()
   .to(".cortina", 1.8, {delay: .6, scaleY: 0, transformOrigin: "top right", ease: Power3.easeOut },0)
-  .from(".model-1", 1.5, {y: 100, ease: Power3.easeOut },0)  
+  .from(".model-1", 1.5, {delay: .7, y: 150, ease: Power3.easeOut },0)  
   .from(".slider-triangle-1", 4, {opacity: 0, x: -200, ease: Power3.easeOut },"homejuntos1")
   .from(".prime-home-h1", 4, {delay: .2, opacity: 0, x: 200, ease: Power3.easeOut },"homejuntos1")
   .from(".home-nav-1", 2, {opacity: 0},"-=.5")
