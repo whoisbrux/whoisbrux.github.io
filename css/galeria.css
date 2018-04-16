@@ -299,7 +299,7 @@ h1 {
     margin: 10px; } }
 
 .ctn-slide-lightbox {
-  background: #000;
+  background: rgba(7, 30, 47, 0.98);
   width: 100vw;
   height: 100vh;
   position: fixed;

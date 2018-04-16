@@ -313,7 +313,7 @@ h1 {
     margin: 10px; } }
 
 .ctn-slide-lightbox {
-  background: #000;
+  background: rgba(7, 30, 47, 0.98);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -367,64 +367,53 @@ h1 {
   right: 12vw; }
 
 .bp1 .photo-trg {
-  background: url(..../image/foto1.jpg) center no-repeat;
+  background: url(../image/foto1.jpg) center no-repeat;
   background-size: contain; }
 
 .bp2 .photo-trg {
-  background: url(..../image/foto2.jpg) center no-repeat;
+  background: url(../image/foto2.jpg) center no-repeat;
   background-size: contain; }
 
 .bp3 .photo-trg {
-  background: url(..../image/foto3.jpg) center no-repeat;
+  background: url(../image/foto3.jpg) center no-repeat;
   background-size: contain; }
 
 .bp4 .photo-trg {
-  background: url(..../image/foto4.jpg) center no-repeat;
+  background: url(../image/foto4.jpg) center no-repeat;
   background-size: contain; }
 
 .bp5 .photo-trg {
-  background: url(..../image/foto5.jpg) center no-repeat;
+  background: url(../image/foto5.jpg) center no-repeat;
   background-size: contain; }
 
 .bp6 .photo-trg {
-  background: url(..../image/foto6.jpg) center no-repeat;
+  background: url(../image/foto6.jpg) center no-repeat;
   background-size: contain; }
 
 .bp7 .photo-trg {
-  background: url(..../image/foto7.jpg) center no-repeat;
+  background: url(../image/foto7.jpg) center no-repeat;
   background-size: contain; }
 
 .bp8 .photo-trg {
-  background: url(..../image/foto8.jpg) center no-repeat;
+  background: url(../image/foto8.jpg) center no-repeat;
   background-size: contain; }
 
 .bp9 .photo-trg {
-  background: url(..../image/foto9.jpg) center no-repeat;
+  background: url(../image/foto9.jpg) center no-repeat;
   background-size: contain; }
 
 .bp10 .photo-trg {
-  background: url(..../image/foto10.jpg) center no-repeat;
+  background: url(../image/foto10.jpg) center no-repeat;
   background-size: contain; }
 
 .bp11 .photo-trg {
-  background: url(..../image/foto11.jpg) center no-repeat;
+  background: url(../image/foto11.jpg) center no-repeat;
   background-size: contain; }
 
 .bp12 .photo-trg {
-  background: url(..../image/foto12.jpg) center no-repeat;
+  background: url(../image/foto12.jpg) center no-repeat;
   background-size: contain; }
 
-.bp13 .photo-trg {
-  background: url(..../image/foto13.jpg) center no-repeat;
-  background-size: contain; }
-
-.bp14 .photo-trg {
-  background: url(..../image/foto14.jpg) center no-repeat;
-  background-size: contain; }
-
-.bp15 .photo-trg {
-  background: url(..../image/foto15.jpg) center no-repeat;
-  background-size: contain; }
 
 @media only screen and (min-width: 1023px) {
   .lightbox-navegador {
