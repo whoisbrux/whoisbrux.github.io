@@ -1,6 +1,6 @@
 
 window.onload = function () {
-    TweenMax.to('.preload',1, { scaleY: 0, transformOrigin:'top left', ease: Power3.easeOut })
+    //TweenMax.to('.preload',1, { scaleY: 0, transformOrigin:'top left', ease: Power3.easeOut })
 }
 
 var time = .8;
