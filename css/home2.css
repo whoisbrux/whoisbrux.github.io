@@ -1,0 +1,291 @@
+/********** ABRE VARS **********/
+/********** FECHA VARS **********/
+/* GENERAL CLASS */
+.full-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.df-ai-ct {
+  display: flex;
+  align-items: center; }
+
+.df-jc-ct {
+  display: flex;
+  justify-content: center; }
+
+/* GENERAL CLASS */
+/* NEW HOME OPEN */
+.center-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.full-box {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column; }
+
+.slider-box {
+  width: 100%;
+  height: 100vh;
+  position: absolute; }
+
+.holder-slider {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  top: 0; }
+
+.half-box {
+  width: 95%;
+  height: 100vh;
+  position: relative;
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.box-featured {
+  width: 100%;
+  position: relative;
+  flex-direction: column; }
+
+.slider-triangle-1 {
+  height: 200px;
+  left: -110px;
+  position: absolute; }
+
+.home-box-title {
+  z-index: 1; }
+
+.slider-triangle-2 {
+  display: none; }
+
+.prime-home-h1,
+.second-home-h1 {
+  margin-left: 13px; }
+
+.home-nav-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  border: none;
+  background: none; }
+
+.home-border {
+  width: calc(100% - 20px);
+  height: 1px;
+  background: #fff;
+  margin: 0 auto;
+  opacity: 0.5; }
+
+.home-prgf {
+  font-size: 1rem;
+  color: #fff;
+  padding: 15px; }
+
+.mg-bt-h1-home {
+  margin-bottom: 30px; }
+
+.btn-home {
+  background: transparent;
+  border: none;
+  align-self: flex-start;
+  margin-top: 20px; }
+
+.btn-home a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 5px 0; }
+
+.btn-home img {
+  height: 10px;
+  margin-left: 20px;
+  opacity: 0.7; }
+
+.btn-home-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0 10px; }
+
+.nav-home {
+  bottom: 2vh; }
+
+.box-numbers {
+  display: none; }
+
+.bg-foto-1 {
+  background: url(/image/mb-home.jpg) center no-repeat;
+  background-size: cover; }
+
+.bg-foto-2 {
+  background: url(/image/mb-sobre.jpg) center no-repeat;
+  background-size: cover; }
+
+.bg-foto-3 {
+  background: url(/image/mb-especialidades.jpg) center no-repeat;
+  background-size: cover; }
+
+.bg-foto-4 {
+  background: url(/image/mb-materias.jpg) center no-repeat;
+  background-size: cover; }
+
+.bg-foto-5 {
+  background: url(/image/mb-contato.jpg) center no-repeat;
+  background-size: cover; }
+
+@media only screen and (min-width: 767px) {
+  .bg-foto-1 {
+    background: url(/image/intro.jpg) center no-repeat;
+    background-size: cover; }
+  .bg-foto-2 {
+    background: url(/image/sobre.jpg) center no-repeat;
+    background-size: cover; }
+  .bg-foto-3 {
+    background: url(/image/especialidades.jpg) center no-repeat;
+    background-size: cover; }
+  .bg-foto-4 {
+    background: url(/image/materias.jpg) center no-repeat;
+    background-size: cover; }
+  .bg-foto-5 {
+    background: url(/image/contato.jpg) center no-repeat;
+    background-size: cover; } }
+
+@media only screen and (min-width: 767px) {
+  .prime-home-h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-left: 21vw; }
+  .second-home-h1 {
+    font-size: 3rem;
+    line-height: 3.5rem; }
+  .slider-triangle-1 {
+    left: 3vw;
+    top: -60px; }
+  .second-home-h1 {
+    margin-left: 5px; }
+  .slider-triangle-2 {
+    display: block;
+    height: 130px;
+    position: absolute; }
+  .box-numbers {
+    position: relative;
+    height: 130px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; }
+  .slider-number {
+    color: #fff;
+    font-size: 4rem;
+    z-index: 1;
+    font-family: "Oswald", sans-serif; }
+  .name-page {
+    color: #fff;
+    z-index: 1;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  .travel-numbers {
+    position: absolute;
+    right: 10px;
+    top: 0; } }
+
+@media only screen and (min-width: 1023px) {
+  .box-featured {
+    width: 85%; }
+  .prime-home-h1 {
+    font-size: 3.5rem;
+    line-height: 3.7rem;
+    margin-left: 18vw; }
+  .second-home-h1 {
+    font-size: 3.5rem; }
+  .slider-triangle-1 {
+    left: 3vw;
+    top: 30px;
+    height: 220px;
+    position: absolute; }
+  .model-1 .home-box-title {
+    padding-top: 100px; }
+  .home-nav-1 {
+    margin-top: 70px;
+    margin-left: 155px; }
+  .home-prgf {
+    width: 60%; }
+  .btn-home-2 {
+    padding: 0; } }
+
+@media only screen and (min-width: 1365px) {
+  .box-featured {
+    width: 85%; }
+  .prime-home-h1 {
+    font-size: 4.2rem;
+    margin-left: 260px; }
+  .second-home-h1 {
+    font-size: 4rem; }
+  .slider-triangle-1 {
+    left: 70px;
+    top: -10px;
+    height: 280px; }
+  .slider-triangle-2 {
+    display: block;
+    height: 170px;
+    position: absolute; }
+  .travel-numbers {
+    top: 10px; }
+  .name-page {
+    margin-bottom: 40px;
+    margin-right: 20px; }
+  .slider-number {
+    margin-right: 20px; }
+  .home-nav-1 {
+    margin-top: 75px;
+    margin-left: 250px; }
+  .box-nav-home {
+    width: 87%; } }
+
+@media only screen and (min-width: 1919px) {
+  .prime-home-h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-left: 12vw; }
+  .second-home-h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem; }
+  .slider-triangle-1 {
+    left: 0vw;
+    top: -10px;
+    height: 320px; }
+  .home-nav-1 {
+    margin-top: 80px;
+    margin-left: 220px; }
+  .mg-bt-h1-home {
+    margin-bottom: 40px; }
+  .btn-home {
+    margin-top: 25px; }
+  .home-prgf {
+    padding: 25px; }
+  .slider-triangle-2 {
+    height: 220px; }
+  .travel-numbers {
+    top: 40px;
+    right: -1px; }
+  .name-page {
+    margin-bottom: 35px;
+    margin-right: 30px;
+    font-size: 2.5rem; }
+  .slider-number {
+    margin-right: 25px;
+    font-size: 5rem; } }

@@ -1,3 +1,5 @@
+ 
+
 
 /* MENU MODAL */
 var tLmodalMenu = new TimelineMax({ paused: true });
@@ -127,14 +129,14 @@ var tlarrow = new TimelineMax({
   }
 });
 
-$(".btnSaiba").mouseenter(function() {
+$(".btnSaiba, .btn-home").mouseenter(function() {
   var tlsaiba = new TimelineMax()
     .to(".js-h-rgt", 0.4, { ease: Expo.easeInOut, x: 40, opacity: 0 })
     .to(".js-h-rgt", 0, { x: -10 })
     .to(".js-h-rgt", 0.4, { x: 0, opacity: 0.8 });
 });
 
-$(".navegador").mouseenter(function() {
+$(".navegador, .home-nav-1, .btn-home-2").mouseenter(function() {
   var tlnav = new TimelineMax()
     .to(".mg-lf-1", 0.4, { ease: Expo.easeInOut, y: 40, opacity: 0 })
     .to(".mg-lf-1", 0, { y: -40 })
@@ -143,172 +145,149 @@ $(".navegador").mouseenter(function() {
 
 ///////////////////////// ARROW ANIMAÇÃO FECHA
 
-///////////////////////// HOME ABRE
-var time = 1,
-  timeLinha = 1,
-  timeMain = 1.5;
 
-TweenMax.to(".lt1", 0.5, { width: "100%" }, "-=0.5");
-TweenMax.to(".tc1", 0.5, { scale: 1.7, backgroundColor: "#fff" }, "-=0.5");
+/////////////////////// HOME
 var tl1 = new TimelineLite();
 tl1
   .addPause()
-  .to(".bordaT1", 0.4, { height: "100%" }, "juntoBorda1")
-  .to(".bordaR1", 0.4, { width: "100%" }, "juntoBorda1")
-  .to(".bordaB1", 0.4, { height: "100%" }, "juntoBorda1")
-  .to(".bordaL1", 0.4, { width: "100%" }, "juntoBorda1")
-  .to(".lt1", 0.5, { width: "0%" },"juntoBorda1")
-  .to(".tc1", 0.5, { scale: 1, backgroundColor: "transparent" },"juntoBorda1")
+  .to(".js-holder-1 .half-box", 0.8, {autoAlpha: 0 },"juntosTrans1")  
+  .to(".js-holder-1", 0.8, {height: 0 },"-=.3")
+  
+  .from(".nav-home", 1, { autoAlpha:0 },"juntoBorda2")
 
-  .to(".ctnCentral", 0.8, {opacity: 0 },"juntosTrans1")  
-  .to(".main", timeMain, { ease: Expo.easeInOut, top: "-100vh" },"juntosTrans1")
-  .set(".ctnCentral", { y: 500})
-  .to(".lt2", 0.5, { width: "100%" },"juntoBorda2")
-  .to(".tc2", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntoBorda2")
-  .to(".bordaT1", 0.5, { height: "0%" }, "juntoBorda2")
-  .to(".bordaR1", 0.5, { width: "0%" }, "juntoBorda2")
-  .to(".bordaB1", 0.5, { height: "0%" }, "juntoBorda2")
-  .to(".bordaL1", 0.5, { width: "0%" }, "juntoBorda2")
-  .to(".ctnCentral", time,{ ease: Expo.easeInOut, y: 250 , opacity: 1 },"-=.5")
-  .from(".foto2 .trianguloDesk", 1.5,{ ease: Expo.easeInOut, scale: 2, opacity: 0 },"-=1" )
-  .from(".foto2 .boxNumeral", 1.5,{ ease: Expo.easeInOut, x: "100px", opacity: 0 },"-=0.7" )
+  .to(".lt1", 0.5, { width: "100%" },"juntoBorda2")
+  .to(".tc1", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntoBorda2")
+  
+  .fromTo(".js-holder-2 .js-h1-1", 0.4, {y:180, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda2")
+  .fromTo(".js-holder-2 .js-h1-2", 0.4, {y:220, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda2")
+  .fromTo(".js-holder-2 .travel-numbers", 0.4, {y:150, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda2")  
+
+  .from(".js-holder-2 .slider-triangle-2", .5,{ scale:2 , autoAlpha:0},"juntoBorda2")
+  .from(".js-holder-2 .slider-number", 1,{ y:-30 , autoAlpha:0},"juntoBorda2")
+  .from(".js-holder-2 .name-page", 1,{ y:30 , autoAlpha:0},"juntoBorda2")
+
+
+
+  ////////// slider 2
+  .addPause()
+
+  .to(".js-holder-2 .js-h1-1", .7, {ease: Power2.easeInOut,  y:0},"bg1")
+  .to(".js-holder-2 .js-h1-2", .7, {ease: Power2.easeInOut,  y:0},"-=.6","bg1")
+  .to(".js-holder-2 .travel-numbers", 0.7, {y:0},"-=.6")
+  //.to(".home-slider-2", .5, {backgroundPosition: "bottom"},"bg1")
+
+   
+
+  .from(".js-holder-2 .home-border", .5,{width:0, autoAlpha:0})
+  .from(".js-holder-2 .home-prgf", .5,{ autoAlpha:0})
+  .from(".js-holder-2 .btn-home", .8,{ autoAlpha:0})
 
   .addPause()
-  .to(".foto2", 1, { ease: Expo.easeInOut, backgroundPosition: "bottom" })
-  .to(".ctnCentral", 1, { ease: Expo.easeInOut, y: 0 , opacity: 1 }, "-=1")
-  .from(".foto2 .bordaHome", timeLinha, { width: 0, autoAlpha: 0 }, "-=0.1")
-  .from(".foto2 .boxDescri p", time, { autoAlpha: 0 }, "-=0.5")
-  .from(".foto2 .btnSaiba", 1.1, { autoAlpha: 0 }, "-=0.3")
 
+  .to(".js-holder-2 .half-box", 0.8, {autoAlpha: 0 },"juntosTrans3")  
+  .to(".js-holder-2", 0.8, {height: 0 },"-=.3")
 
-/////////slider 2
-  .addPause()
-  .to(".bordaT1", 0.4, { height: "100%" }, "juntoBorda3")
-  .to(".bordaR1", 0.4, { width: "100%" }, "juntoBorda3")
-  .to(".bordaB1", 0.4, { height: "100%" }, "juntoBorda3")
-  .to(".bordaL1", 0.4, { width: "100%" }, "juntoBorda3")
-  .to(".lt2", 0.5, { width: "0%" },"juntoBorda3")
-  .to(".tc2", 0.5, { scale: 1, backgroundColor: "transparent" },"juntoBorda3")
+  .to(".holder-navegador", 0.7, { y: -20 },"juntosTrans3")
+  .to(".lt1", 0.5, { width: "0" },"juntosTrans3")
+  .to(".tc1", 0.5, { scale: 1, backgroundColor: "transparent" },"juntosTrans3")
+  .to(".lt2", 0.5, { width: "100%" },"juntosTrans3")
+  .to(".tc2", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntosTrans3")
 
-  .to(".ctnCentral", 0.8, {opacity: 0 },"juntosTrans2")  
-  .to(".main", timeMain, { ease: Expo.easeInOut, top: "-200vh" },"juntosTrans2")
-  .set(".ctnCentral", { y: 500})
-  .to(".lt3", 0.5, { width: "100%" },"juntoBorda4")
-  .to(".tc3", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntoBorda4")
-  .to(".bordaT1", 0.5, { height: "0%" }, "juntoBorda4")
-  .to(".bordaR1", 0.5, { width: "0%" }, "juntoBorda4")
-  .to(".bordaB1", 0.5, { height: "0%" }, "juntoBorda4")
-  .to(".bordaL1", 0.5, { width: "0%" }, "juntoBorda4")
-  .to(".ctnCentral", time,{ ease: Expo.easeInOut, y: 250 , opacity: 1 },"-=.5")
-  .from(".foto3 .trianguloDesk", 1.5,{ ease: Expo.easeInOut, scale: 2, opacity: 0 },"-=1" )
-  .from(".foto3 .boxNumeral", 1.5,{ ease: Expo.easeInOut, x: "200px", opacity: 0 },"-=0.7" )
+  .fromTo(".js-holder-3 .js-h1-1", 0.4, {y:180, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda4")
+  .fromTo(".js-holder-3 .js-h1-2", 0.4, {y:220, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda4")
+  .fromTo(".js-holder-3 .travel-numbers", 0.4, {y:150, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda4")  
 
-  .addPause()
-  .to(".foto3", 1, { ease: Expo.easeInOut, backgroundPosition: "bottom" })
-  .to(".ctnCentral", 1, { ease: Expo.easeInOut, y: 0 , opacity: 1 }, "-=1")
-  .from(".foto3 .bordaHome", timeLinha, { width: 0, autoAlpha: 0 }, "-=0.1")
-  .from(".foto3 .boxDescri p", time, { autoAlpha: 0 }, "-=0.5")
-  .from(".foto3 .btnSaiba", 1.1, { autoAlpha: 0 }, "-=0.3")
+  .from(".js-holder-3 .slider-triangle-2", .5,{ scale:2 , autoAlpha:0},"juntoBorda4")
+  .from(".js-holder-3 .slider-number", 1,{ y:-30 , autoAlpha:0},"juntoBorda4")
+  .from(".js-holder-3 .name-page", 1,{ y:30 , autoAlpha:0},"juntoBorda4")
 
-
-
-  /////////slider 3
-  .addPause()
-  .to(".bordaT1", 0.4, {ease: Expo.easeInOut, height: "100%" }, "juntoBorda5")
-  .to(".bordaR1", 0.4, {ease: Expo.easeInOut, width: "100%" }, "juntoBorda5")
-  .to(".bordaB1", 0.4, {ease: Expo.easeInOut, height: "100%" }, "juntoBorda5")
-  .to(".bordaL1", 0.4, {ease: Expo.easeInOut, width: "100%" }, "juntoBorda5")
-  .to(".lt3", 0.5, { width: "0%" },"juntoBorda5")
-  .to(".tc3", 0.5, { scale: 1, backgroundColor: "transparent" },"juntoBorda5")
-
-  .to(".ctnCentral", 0.8, {opacity: 0 },"juntosTrans3")  
-  .to(".main", timeMain, { ease: Expo.easeInOut, top: "-300vh" },"juntosTrans3")
-  .set(".ctnCentral", { y: 500})
-  .to(".lt4", 0.5, { width: "100%" },"juntoBorda6")
-  .to(".tc4", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntoBorda6")
-  .to(".bordaT1", 0.5, {ease: Expo.easeInOut, height: "0%" }, "juntoBorda6")
-  .to(".bordaR1", 0.5, {ease: Expo.easeInOut, width: "0%" }, "juntoBorda6")
-  .to(".bordaB1", 0.5, {ease: Expo.easeInOut, height: "0%" }, "juntoBorda6")
-  .to(".bordaL1", 0.5, {ease: Expo.easeInOut, width: "0%" }, "juntoBorda6")
-  .to(".ctnCentral", time,{ ease: Expo.easeInOut, y: 250 , opacity: 1 },"-=.5")
-  .from(".foto4 .trianguloDesk", 1.5,{ ease: Expo.easeInOut, scale: 2, opacity: 0 },"-=1" )
-  .from(".foto4 .boxNumeral", 1.5,{ ease: Expo.easeInOut, x: "200px", opacity: 0 },"-=0.7" )
-
-  .addPause()
-  .to(".foto4", 1, { ease: Expo.easeInOut, backgroundPosition: "bottom" })
-  .to(".ctnCentral", 1, { ease: Expo.easeInOut, y: 0 , opacity: 1 }, "-=1")
-  .from(".foto4 .bordaHome", timeLinha, { width: 0, autoAlpha: 0 }, "-=0.1")
-  .from(".foto4 .boxDescri p", time, { autoAlpha: 0 }, "-=0.5")
-  .from(".foto4 .btnSaiba", 1.1, { autoAlpha: 0 }, "-=0.3")
-
-
-
-
-    /////////slider 4
+    ////////// slider 3
     .addPause()
-    .to(".bordaT1", 0.4, {ease: Expo.easeInOut, height: "100%" }, "juntoBorda7")
-    .to(".bordaR1", 0.4, {ease: Expo.easeInOut, width: "100%" }, "juntoBorda7")
-    .to(".bordaB1", 0.4, {ease: Expo.easeInOut, height: "100%" }, "juntoBorda7")
-    .to(".bordaL1", 0.4, {ease: Expo.easeInOut, width: "100%" }, "juntoBorda7")
-    .to(".lt4", 0.5, { width: "0%" },"juntoBorda7")
-    .to(".tc4", 0.5, { scale: 1, backgroundColor: "transparent" },"juntoBorda7")
+
+    .to(".js-holder-3 .js-h1-1", .7, {ease: Power2.easeInOut,  y:0})
+    .to(".js-holder-3 .js-h1-2", .7, {ease: Power2.easeInOut,  y:0},"-=.6")
+    .to(".js-holder-3 .travel-numbers", 0.7, {y:0},"-=.6")  
   
-    .to(".ctnCentral", 0.8, {opacity: 0 },"juntosTrans4")  
-    .to(".main", timeMain, { ease: Expo.easeInOut, top: "-400vh" },"juntosTrans4")
-    .set(".ctnCentral", { y: 500})
-    .to(".lt5", 0.5, { width: "100%" },"juntoBorda8")
-    .to(".tc5", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntoBorda8")
-    .to(".bordaT1", 0.5, {ease: Expo.easeInOut, height: "0%" }, "juntoBorda8")
-    .to(".bordaR1", 0.5, {ease: Expo.easeInOut, width: "0%" }, "juntoBorda8")
-    .to(".bordaB1", 0.5, {ease: Expo.easeInOut, height: "0%" }, "juntoBorda8")
-    .to(".bordaL1", 0.5, {ease: Expo.easeInOut, width: "0%" }, "juntoBorda8")
-    .to(".ctnCentral", time,{ ease: Expo.easeInOut, y: 250 , opacity: 1 },"-=.5")
-    .from(".foto5 .trianguloDesk", 1.5,{ ease: Expo.easeInOut, scale: 2, opacity: 0 },"-=1" )
-    .from(".foto5 .boxNumeral", 1.5,{ ease: Expo.easeInOut, x: "200px", opacity: 0 },"-=0.7" )
-  
+    .from(".js-holder-3 .home-border", .5,{width:0, autoAlpha:0})
+    .from(".js-holder-3 .home-prgf", .5,{ autoAlpha:0})
+    .from(".js-holder-3 .btn-home", .8,{ autoAlpha:0})
+
     .addPause()
-    .to(".foto4", 1, { ease: Expo.easeInOut, backgroundPosition: "bottom" })
-    .to(".ctnCentral", 1, { ease: Expo.easeInOut, y: 0 , opacity: 1 }, "-=1")
-    .from(".foto5 .bordaHome", timeLinha, { width: 0, autoAlpha: 0 }, "-=0.1")
-    .from(".foto5 .boxDescri p", time, { autoAlpha: 0 }, "-=0.5")
-    .from(".foto5 .btnSaiba", 1.1, { autoAlpha: 0 }, "-=0.3")
   
+    .to(".js-holder-3 .half-box", 0.8, {autoAlpha: 0 },"juntosTrans5")  
+    .to(".js-holder-3", 0.8, {height: 0 },"-=.3")  
+
+    .to(".holder-navegador", 0.7, { y: -40 },"juntosTrans5")
+    .to(".lt2", 0.5, { width: "0" },"juntosTrans5")
+    .to(".tc2", 0.5, { scale: 1, backgroundColor: "transparent" },"juntosTrans5")
+    .to(".lt3", 0.5, { width: "100%" },"juntosTrans5")
+    .to(".tc3", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntosTrans5")
+  
+    .fromTo(".js-holder-4 .js-h1-1", 0.4, {y:180, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda6")
+    .fromTo(".js-holder-4 .js-h1-2", 0.4, {y:220, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda6")
+    .fromTo(".js-holder-4 .travel-numbers", 0.4, {y:150, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda6")  
+  
+    .from(".js-holder-4 .slider-triangle-2", .5,{ scale:2 , autoAlpha:0},"juntoBorda6")
+    .from(".js-holder-4 .slider-number", 1,{ y:-30 , autoAlpha:0},"juntoBorda6")
+    .from(".js-holder-4 .name-page", 1,{ y:30 , autoAlpha:0},"juntoBorda6")
+    
+    ////////// slider 4
+
+    .addPause()
+
+    .to(".js-holder-4 .js-h1-1", .7, {ease: Power2.easeInOut,  y:0})
+    .to(".js-holder-4 .js-h1-2", .7, {ease: Power2.easeInOut,  y:0},"-=.6")
+    .to(".js-holder-4 .travel-numbers", 0.7, {y:0},"-=.6")  
+  
+    .from(".js-holder-4 .home-border", .5,{width:0, autoAlpha:0})
+    .from(".js-holder-4 .home-prgf", .5,{ autoAlpha:0})
+    .from(".js-holder-4 .btn-home", .8,{ autoAlpha:0})
+
+    .addPause()
+  
+    .to(".js-holder-4 .half-box", 0.8, {autoAlpha: 0 },"juntosTrans7")  
+    .to(".js-holder-4", 0.8, {height: 0 },"-=.3") 
+
+    .to(".holder-navegador", 0.7, { y: -60 },"juntosTrans7")
+    .to(".lt3", 0.5, { width: "0" },"juntosTrans7")
+    .to(".tc3", 0.5, { scale: 1, backgroundColor: "transparent" },"juntosTrans7")
+    .to(".lt4", 0.5, { width: "100%" },"juntosTrans7")
+    .to(".tc4", 0.5, { scale: 1.7, backgroundColor: "#fff" },"juntosTrans7")
+  
+    .fromTo(".js-holder-5 .js-h1-1", 0.4, {y:180, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda8")
+    .fromTo(".js-holder-5 .js-h1-2", 0.4, {y:220, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda8")
+    .fromTo(".js-holder-5 .travel-numbers", 0.4, {y:150, autoAlpha:0}, {y:200, autoAlpha:1},"juntoBorda8")  
+  
+    .from(".js-holder-5 .slider-triangle-2", .5,{ scale:2 , autoAlpha:0},"juntoBorda8")
+    .from(".js-holder-5 .slider-number", 1,{ y:-30 , autoAlpha:0},"juntoBorda8")
+    .from(".js-holder-5 .name-page", 1,{ y:30 , autoAlpha:0},"juntoBorda8")
+
+     ////////// slider 4
+    .addPause()
+
+    .to(".js-holder-5 .js-h1-1", .7, {ease: Power2.easeInOut,  y:0})
+    .to(".js-holder-5 .js-h1-2", .7, {ease: Power2.easeInOut,  y:0},"-=.6")
+    .to(".js-holder-5 .travel-numbers", 0.7, {y:0},"-=.6","juntosTrans10")  
+  
+    .to(".holder-navegador", 0.7, { y: -80 },"juntosTrans10")
+    .to(".nav-home .mg-lf-1", 0.5, { autoAlpha: 0 },"juntosTrans10")
+    .from(".nav-home .js-h-rgt-2", 0.5, { autoAlpha: 0 },"juntosTrans10")
+
+    .from(".js-holder-5 .home-border", .5,{width:0, autoAlpha:0})
+    .from(".js-holder-5 .home-prgf", .5,{ autoAlpha:0})
+    .from(".js-holder-5 .btn-home", .8,{ autoAlpha:0}) 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(".js-click-home").on("click", function() {
+$(".js-click-home, .home-nav-1, .btn-home-2").on("click", function() {
   tl1.play();
 });
 
 $(window).bind("mousewheel DOMMouseScroll", function(event) {
   if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-    tl1.reverse();
+    tl1.reverse();   
   } else {
-    tl1.play();
+    tl1.play();   
   }
 });
 
@@ -356,7 +335,7 @@ var lengPhotos = $(".ctn-slide-lightbox .photo-trg").length,
   wScreen = $(window).width(),
   $holderLb = $(".holder-slide-lightbox"),
   time = 1,
-  $boxPhotoTrigger = $(".box-photo-galeria-trg"),
+  $boxPhotoTrigger = $(".box-foto-galeria"),
   $ctnLightBox = $(".ctn-slide-lightbox"),
   myEase = Power3.easeInOut,
   animating = false;
@@ -364,6 +343,7 @@ var lengPhotos = $(".ctn-slide-lightbox .photo-trg").length,
 TweenMax.set($holderLb, { width: wScreen * lengPhotos });
 
 TweenMax.set($ctnLightBox, { autoAlpha: 0 });
+
 
 
 function notAnime() {
@@ -472,36 +452,7 @@ $(".ctn-slide-lightbox .pf-ctn-fecha").click(function() {
   TweenMax.to($ctnLightBox, 1, { autoAlpha: 0 });
 });
 
-//////////////galeria 2
-var trigger1 = ".galeria-navegador :nth-child(1)";
-trigger2 = ".galeria-navegador :nth-child(2)";
-trigger3 = ".galeria-navegador :nth-child(3)";
-trigger4 = ".galeria-navegador :nth-child(4)";
-trigger5 = ".galeria-navegador :nth-child(5)";
-holderTgr = ".holder-slide-trg";
 
-TweenMax.to(trigger1, 2, {ease: Expo.easeInOut, backgroundColor: "#555", scale: 1.2});
-
-function goSlideTrg(goSlide) {
-  TweenMax.to(holderTgr, 1, { ease: Expo.easeInOut, top: "-" + goSlide + "00vh"});
-}
-
-function completo() {
-  animee = false;
-}
-var animee = false;
-var lastTrg, clickedTrg;
-$(".trg-slide-trg").click(function() {
-  if (!animee) {
-    animee = true;
-    lastTrg = $(this).attr("class").split(" ")[1]; //pega ultima Classe do This = ElementoClickado
-    clickedTrg = lastTrg.slice(-1); //pega as duas ultimas Letras da Class clicada
-
-    TweenMax.to($(".trg-slide-trg").not(this), 2, {ease: Expo.easeInOut,backgroundColor: "transparent", onComplete: completo});
-    TweenMax.to(this, 2, { ease: Expo.easeInOut, backgroundColor: "#555",scale: 1.2 });
-     goSlideTrg(clickedTrg);
-  }
-});
 
 
 ///////////////////////// hover menu triangulo
@@ -522,27 +473,33 @@ $(".linktag").hover(
 
 
 ///////////////////////// hover das imagens galeria
-$(".pf-hover").hover(
+$( ".box-foto-galeria" ).hover(    
   function() {
-    TweenMax.to(this, 0.5, {opacity: .8});
+    var classe1 = $(this).attr("class").split(" ")[1];
+TweenMax.to("."+classe1+" .hover-galeria", 0.5, {opacity: .8});
+TweenMax.to("."+classe1+" p", 0.5, {opacity: 1});
   },
   function() {
-    TweenMax.to(this, 0.5, {opacity: 0});
+    var classe1 = $(this).attr("class").split(" ")[1];
+    TweenMax.to("."+classe1+" .hover-galeria", 0.5, {opacity: 0});  
+    TweenMax.to("."+classe1+" p", 0.5, {opacity: 0});  
   }
 );
 ///////////////////////// hover botão fecha
-$(".pf-ctn-fecha").hover(function() {
+
+$(".pf-ctn-fecha").hover(
+  function() {
   if ( !animee ) {    
     animee = true    
-    TweenLite.to(".pf-ctn-fecha img", 0.8, { ease: Expo.easeInOut, rotation: "+=180", onComplete: notAnime });
+    TweenMax.to(this, 0.8, { ease: Expo.easeInOut, rotation: 180});
   }
-},function() {
-  if ( animee = false ) {
-    animee = true
-     TweenLite.to(".pf-ctn-fecha img", 0.8, {ease: Expo.easeInOut,rotation: "-=180", onComplete: notAnime });
-  }
+ },
+function () {
+    TweenMax.to(this, 0.8, {ease: Expo.easeInOut, rotation: 0, onComplete: animee = false });
 });
+
 ///////////////////////// hover lista menu modal
+
 $(".menu-modal ul li a, .menu-modal ul li").hover(
   function() {
     TweenLite.to(this, 0.4, { x: 10, color: "#547b9c" });
@@ -551,8 +508,6 @@ $(".menu-modal ul li a, .menu-modal ul li").hover(
     TweenLite.to(this, 0.4, { x: 0, color: "#fff" });
   }
 );
-
-
 
 
 /////////////////////////  ESPECIALIDADES
@@ -573,3 +528,33 @@ $(".line-full").click(function() {
     TweenLite.to(facMenos, .4, { autoAlpha:1});
     }
 });
+
+
+
+
+
+
+
+
+  
+
+
+  //////////cortina 2
+var tlintroPage = new TimelineMax()
+  .from(".cortina-2", 1.5, { backgroundColor:"#fff",ease: Power3.easeOut },0)
+  .to(".cortina-2", 1.2, {scaleY: 0, transformOrigin: "top right", ease: Power3.easeOut })
+  .from(".i-triangulo", 2, { ease: Expo.easeInOut, x: -100, autoAlpha: 0 },"-=1")  
+  .from(".i-title", 2, { ease: Expo.easeInOut, x: 100, autoAlpha: 0 },"-=1")
+  .from("button.i-scroll", 2,{ ease: Expo.easeInOut, autoAlpha: 0 },"-=1")
+
+
+ /////////////////////////  intro inner
+
+var tlintroPage = new TimelineMax()
+  .to(".cortina", 1.2, {scaleY: 0, transformOrigin: "top right", ease: Power3.easeOut },0)
+  .from(".model-1", 1.5, {y: 100, ease: Power3.easeOut },0)  
+  .from(".slider-triangle-1", 4, {opacity: 0, x: -200, ease: Power3.easeOut },"homejuntos1")
+  .from(".prime-home-h1", 4, {delay: .2, opacity: 0, x: 200, ease: Power3.easeOut },"homejuntos1")
+  .from(".home-nav-1", 2, {opacity: 0},"-=.5")
+
+
