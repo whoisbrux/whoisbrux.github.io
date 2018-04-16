@@ -356,3 +356,10 @@ body {
 @media only screen and (max-width: 767px) {
   .ctn-bg .fader-photo-intro {
     background: url(/image/mb-especialidades.jpg) center no-repeat; } }
+
+
+    .go-home img{
+    width: 10px;
+    opacity: .7;
+    margin-left: 20px;
+}

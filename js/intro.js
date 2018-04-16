@@ -71,3 +71,12 @@ var tlbtn = new TimelineMax({repeat:-1})
 
     .to('.intro-bd-3', .5, { scaleX: 0, transformOrigin:'top left' },"bdjuntas3")
     .to('.intro-bd-4', .5, { scaleY: 0, transformOrigin:' top right' },"bdjuntas4")
+
+
+
+    $(".go-home").mouseenter(function() {
+  var tlsaiba = new TimelineMax()
+    .to(".js-h-rgt", 0.4, { ease: Expo.easeInOut, x: 40, opacity: 0 })
+    .to(".js-h-rgt", 0, { x: -20 })
+    .to(".js-h-rgt", 0.4, { x: 0, opacity: 0.8 });
+});
