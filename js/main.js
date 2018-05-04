@@ -1,75 +1,83 @@
-$(".box-menu").click(function() {
-    //TweenMax.to(".holder-faixa", 3, {ease: Expo.easeOut, width: "100vw"});
-  });
+// -------------  whois ------------- //
+var animating = false,
+		count = 0;
+
+function notAnime() {
+  animating = false;
+}
 
 
+var SliderHome = document.querySelectorAll('.sliders');
+var SliderLeng = $(".sliders").length;
 
-  var tlIntro = new TimelineMax()   
-  .to(".black-curtain", 1.5, {ease: Expo.easeInOut, width:0})
-  //.from(".bg-1", .6, {y: 300, autoAlpha: 0})
-  .from(".barra-1", 1, {ease: Power4.easeInOut, xPercent:50, yPercent:-50, autoAlpha: 0},"-=.4")
-  .from(".barra-2", 1, {ease: Power4.easeInOut, xPercent:-50, yPercent:+50, autoAlpha: 0},"-=.5")
+TweenMax.set(SliderHome[0], { left: 0 });
 
-  .from(".holder-1 .box-prime", 1.5, {ease: Power4.easeInOut, y: -50, autoAlpha: 0},"-=.5")
+$(".depois").click(function () {
 
+    var SliderPosition = $(SliderHome[SliderLeng - 1]);
+    var position = SliderPosition.position().left;
 
+    if (!animating) {
 
+        animating = true
 
-$('.holder-1').mousemove(function(e){
-  parallaxIt(e, '.barra-1', -30);
-  parallaxIt(e, '.barra-2', -30);
+        if (count == SliderLeng - 1) {
+            count = 0
+        } else {
+            count++
+        }
+        if (position == 0) {
+
+            TweenMax.set(SliderHome[0], { left: "100vw" })
+            TweenMax.set(SliderHome[1], { left: "100vw" })
+            TweenMax.set(SliderHome[2], { left: "100vw" })
+            TweenMax.set(SliderHome[3], { left: "100vw" })
+
+            var tMaxSlidersTeste1 = new TimelineMax()
+                .to(SliderHome[0], 1, { ease: Expo.easeInOut, left: 0 }, 0)
+                .to(SliderHome[SliderLeng - 1], 1, { ease: Expo.easeInOut, left: "-100vw", onComplete: notAnime }, 0)
+                .set(SliderHome[SliderLeng - 1], { left: "100vw" })
+        }
+
+        else {
+            var tMaxSlidersTeste1 = new TimelineMax()
+                .to(SliderHome[count - 1], 1, { ease: Expo.easeInOut, left: "-100vw" }, 0)
+                .to(SliderHome[count], 1, { ease: Expo.easeInOut, left: 0, onComplete: notAnime }, 0)
+        }
+    }
 });
 
-function parallaxIt(e, target, movement){
-  var $this = $('.holder-1');
-  var relX = e.pageX - $this.offset().left;
-  var relY = e.pageY - $this.offset().top;
-  
-  TweenMax.to(target, 1, {
-    x: (relX - $this.width()/2) / $this.width() * movement,
-    y: (relY - $this.height()/2) / $this.height() * movement
-  })
-}
- 
- 
-
-var animating = false;
-
-   $(".box-nav").hover(function() {
-    var navClass2 = $(this).attr("class").split(" ")[1];
-    var tlNav = new TimelineMax()    
-      .to("."+navClass2+" .number-nav", .4, {y: -15, autoAlpha: 0},0)
-      .to("."+navClass2+" .p-box", .5, {ease: Expo.easeInOut, width: "100%" },0)
-      .fromTo("."+navClass2+" .p-nav", .3, { y: 25, autoAlpha: 0},{ y: 0, autoAlpha: 1},"-=.3")
-  },  
-  function() {   
-    var navClass2 = $(this).attr("class").split(" ")[1];
-    var tlNav = new TimelineMax()    
-    .to(".p-box", .3, { width: 0},0)
-    .to("."+navClass2+" .number-nav", .4, { y: 0, autoAlpha: 1,})  
-    
-  }); 
 
 
+$(".antes").click(function () {
 
+    var SliderPosition2 = $(SliderHome[0]);
+    var position2 = SliderPosition2.position().left;
 
-  var tl1 = new TimelineMax({paused: true})   
-  .to(".holder-1", 1.5, {ease: Expo.easeInOut, width:0})
-  .from(".modelo-1", 1, {ease: Power4.easeInOut, y: -100, autoAlpha: 0},"-=.7")
-  .from(".holder-faixa", 1.5, {ease: Expo.easeOut, width: 0},"-=.1")
-  
+    if (!animating) {
+        animating = true
+        if (count == 0) {
+            count = SliderLeng - 1
+        } else {
+            count--
+        }
 
-  
-  
+        if (position2 == 0) {
+            TweenMax.set(SliderHome[1], { left: "-100vw" })
+            TweenMax.set(SliderHome[2], { left: "-100vw" })
+            TweenMax.set(SliderHome[3], { left: "-100vw" })
+            TweenMax.set(SliderHome[SliderLeng - 1], { left: "-100vw" })
 
+            var tMaxSlidersTeste1 = new TimelineMax()
+                .to(SliderHome[SliderLeng - 1], 1, { ease: Expo.easeInOut, left: 0 }, 0)
+                .to(SliderHome[0], 1, { ease: Expo.easeInOut, left: "100vw", onComplete: notAnime }, 0)
+                .set(SliderHome[0], { left: "-100vw" })
+        }
 
-
-
-
-  $(".js-nav-1 .p-nav, .box-menu").click(function() {
-    tl1.play();
-  });
-
-
- 
-
+        else {
+            var tMaxSlidersTeste1 = new TimelineMax()
+                .to(SliderHome[count + 1], 1, { ease: Expo.easeInOut, left: "+100vw" }, 0)
+                .to(SliderHome[count], 1, { ease: Expo.easeInOut, left: 0, onComplete: notAnime }, 0)
+        }
+    }
+});
