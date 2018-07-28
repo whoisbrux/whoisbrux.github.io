@@ -8,57 +8,35 @@ $Trirong: 'Trirong', serif;
 $OpenSans: 'Open Sans', sans-serif;
 $cinzaClaro: #A1A1A1;
 
-// contato
-// full header
+// main
 .main {
   width: 100%;
 }
 
-//
-@include x-768 {
-  .holder-main {
-    width: 90%;
-    margin: 0 auto;
-  }
+// contato
+
+// full header
+.blog-header {
+  padding: 100px 0 50px;
 }
 
-//
-@include x-1366 {
-  .holder-main {
-    width: 71%;
-
-  }
+.blog-header .col-1 {
+  height: 100vw;
+  margin: 0 auto;
 }
 
-//
-@include x-1920 {
-  .holder-main {
-    width: 65%;
-  }
-}
-
-.full-header-2 {
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-
-.full-header-2 .titulo {
+.blog-header .titulo {
   position: relative;
   width: 85%;
   background: #fafafa;
   padding: 50px;
-  margin: -80px auto 0;
+  margin: -90px auto 0;
   z-index: 1;
 }
 
-.full-header-2 .titulo-2 {
-  margin-left: 60px;
+.blog-header .titulo-2 {
+  margin-left: 80px;
   margin-bottom: 20px;
-}
-
-.full-header-2 .col-1 {
-  height: 120vw;
-  margin: 0 auto;
 }
 
 .category-post {
@@ -81,20 +59,37 @@ $cinzaClaro: #A1A1A1;
 }
 
 //
+@include x-768 {
+  .blog-header {
+    padding: 130px 0 50px;
+  }
+
+  .blog-header .col-1 {
+    height: 80vw;
+  }
+
+  .blog-header .titulo {
+    width: 70%;
+    padding: 70px;
+    margin: -130px auto 0;
+  }
+}
+
+//
 @include x-1024 {
-  .full-header-2 {
+  .blog-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 
-  .full-header-2 .col-1 {
+  .blog-header .col-1 {
     width: 85%;
-    height: 91vh;
+    height: calc(100vh - 130px);
     margin: 0;
   }
 
-  .full-header-2 .titulo {
+  .blog-header .titulo {
     position: absolute;
     width: 400px;
     margin: auto;
@@ -103,17 +98,24 @@ $cinzaClaro: #A1A1A1;
 }
 
 //
+@include x-1366 {}
+
+//
 @include x-1920 {
-  .full-header-2 .titulo {
-    left: 8%;
+  .blog-header .col-1 {
+    max-width: 1620px;
+    max-height: 830px;
+  }
+
+  .blog-header .titulo {
+    left: 6%;
   }
 }
 
 // itens do contato
 .specifications {
   width: 95%;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  padding: 70px 0;
 }
 
 .specifications .variation img {
@@ -141,16 +143,30 @@ $cinzaClaro: #A1A1A1;
 }
 
 // mapa
+
+.holder-map {
+  padding: 50px 20px;
+}
+
 .x-map {
   width: 100%;
   height: 100vw;
   background: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   max-height: 600px !important;
 }
 
 //
 @include x-768 {
+  .holder-main {
+    width: 80%;
+  }
+
+  .row-1 {
+    display: flex;
+    padding: 15px 0;
+  }
+
   .x-map {
     width: 95%;
     height: 50vw;

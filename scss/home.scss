@@ -8,11 +8,15 @@ $Trirong: 'Trirong', serif;
 $OpenSans: 'Open Sans', sans-serif;
 $cinzaClaro: #A1A1A1;
 
+.holder-main {
+  padding: 100px 0;
+}
+
 // home start main
 .sct-collection {
   width: 100%;
   flex-direction: column;
-  margin-bottom: 20vh;
+  padding: 0 0 70px;
 }
 
 .collection-photos {
@@ -40,8 +44,8 @@ $cinzaClaro: #A1A1A1;
 
 .photo-2 {
   position: relative;
-  width: 80%;
-  height: 350px;
+  width: 90%;
+  height: 110vw;
 }
 
 .photo-3 {
@@ -78,132 +82,74 @@ $cinzaClaro: #A1A1A1;
   margin: 20px 5px 5px;
 }
 @media only screen and (min-width: 767px) {
-  .sct-collection {
-    margin-bottom: 10vh;
-  }
-
   .photo-1 {
     display: flex;
     width: 22%;
-    height: 242px;
+    height: 32vw;
     left: 4%;
   }
 
   .photo-2 {
     width: 45%;
-    height: 430px;
+    height: 60vw;
   }
 
   .photo-3 {
     display: flex;
-    width: 31%;
-    height: 167px;
+    width: 32%;
+    height: 20vw;
     right: 4%;
-    top: 13%;
+    top: 21%;
   }
 
   .collection-2 .photo-1 {
-    width: 25%;
-    height: 245px;
-    left: 8%;
-    top: 0;
+    width: 22%;
+    height: 32vw;
+    left: 10%;
+    top: -10px;
   }
 
   .collection-2 .photo-3 {
     width: 32%;
-    height: 170px;
-    right: 4%;
+    height: 20vw;
+    right: 5%;
     top: auto;
-    bottom: 0;
+    bottom: -10px;
   }
 
   .collection-3 .photo-1 {
-    width: 33%;
-    height: 190px;
-    left: 2%;
-    top: 80px;
+    width: 32%;
+    height: 20vw;
+    left: 4%;
+    top: 100px;
   }
 
   .collection-3 .photo-3 {
-    width: 24%;
-    height: 275px;
-    right: 2%;
-    top: 18%;
+    width: 22%;
+    height: 32vw;
+    right: 4%;
+    top: 23%;
   }
 
   .collection-header {
-    width: 63%;
-    margin-top: -60px;
+    width: 70%;
+    margin-top: -80px;
   }
 }
+
+//
 @media only screen and (min-width: 1023px) {
+  .holder-main {
+    padding: 130px 0 0;
+  }
+
   .sct-collection {
-    margin-bottom: 20vh;
-  }
-
-  .collection-1 .photo-1 {
-    width: 20%;
-    height: 280px;
-    left: 11%;
-  }
-
-  .collection-1 .photo-2 {
-    width: 35%;
-  }
-
-  .collection-1 .photo-3 {
-    width: 28%;
-    height: 192px;
-    right: 7%;
-    top: 20%;
-  }
-
-  .collection-2 .photo-1 {
-    width: 20%;
-    height: 280px;
-    left: 15%;
-  }
-
-  .collection-2 .photo-2 {
-    width: 35%;
-  }
-
-  .collection-2 .photo-3 {
-    width: 28%;
-    height: 192px;
-    right: 10%;
-  }
-
-  .collection-3 .photo-1 {
-    width: 28%;
-    height: 192px;
-    left: 8%;
-    top: 111px;
-  }
-
-  .collection-3 .photo-2 {
-    width: 35%;
-  }
-
-  .collection-3 .photo-3 {
-    width: 20%;
-    height: 280px;
-    right: 11%;
-  }
-
-  .collection-header {
-    width: 50%;
-  }
-
-  .collection-header h1 {
-    font-size: 3.5rem;
+    padding: 0 0 150px;
   }
 }
-@media only screen and (min-width: 1365px) {
-  .sct-collection {
-    margin-bottom: 30vh;
-  }
 
+//
+@media only screen and (min-width: 1365px) {
   .collection-1 .photo-1 {
     width: 270px;
     height: 400px;
@@ -262,9 +208,12 @@ $cinzaClaro: #A1A1A1;
 
 }
 @media only screen and (min-width: 1919px) {
-  // header
-  .header {
-    height: 150px;
+  .holder-main {
+    max-width: 1366px;
+  }
+
+  .sct-collection {
+    padding: 50px 0 150px;
   }
 
   .collection-header h1 {
