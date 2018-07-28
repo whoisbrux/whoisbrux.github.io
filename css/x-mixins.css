@@ -1,0 +1,150 @@
+.x-serif {
+  font-family: "Trirong", serif; }
+
+.x-sans {
+  font-family: "Open Sans", sans-serif; }
+
+.x-dpy-none-ipt {
+  display: none !important; }
+
+.x-dpy-none {
+  display: none; }
+
+.x-dpy-flex {
+  display: flex; }
+
+.x-dpy-block {
+  display: block; }
+
+.x-dpy-grid {
+  display: grid; }
+
+.x-flx-1 {
+  display: flex; }
+
+.x-flx-2 {
+  display: flex;
+  justify-content: center; }
+
+.x-flx-3 {
+  display: flex;
+  align-items: center; }
+
+.x-flx-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.x-flx-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.x-flx-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.x-flx-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.x-pst-fix {
+  position: fixed; }
+
+.x-pst-abs {
+  position: absolute; }
+
+.x-pst-rel {
+  position: relative; }
+
+.x-pst-stc {
+  position: static; }
+
+.x-bg-black {
+  background: black; }
+
+.x-bg-white {
+  background: white; }
+
+.x-bg-Grey {
+  background: Grey; }
+
+.x-bg-tomato {
+  background: tomato; }
+
+.x-clr-black {
+  color: black; }
+
+.x-clr-white {
+  color: white; }
+
+.x-clr-Grey {
+  color: Grey; }
+
+.x-clr-tomato {
+  color: tomato; }
+
+.x-wh-full {
+  width: 100%; }
+
+.x-ht-full {
+  height: 100%; }
+
+.x-vw-full {
+  width: 100vw; }
+
+.x-vh-full {
+  height: 100vh; }
+
+.x-ovr-hid {
+  overflow: hidden; }
+
+.x-ovr-scl {
+  overflow: scroll; }
+
+.x-ovr-at {
+  overflow: auto; }
+
+.x-ovr-vsb {
+  overflow: visible; }
+
+.x-img-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.x-cur-ptr {
+  cursor: pointer; }
+
+.x-szg-box {
+  box-sizing: border-box; }
+
+.col-50 {
+  width: 50%; }
+
+.x-max-container {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.x-text-up {
+  text-transform: uppercase; }
+
+.x-padding-50 {
+  padding: 50px; }
+
+.x-max-wh {
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media only screen and (min-width: 1022px) {
+  .x-min-none-1024 {
+    display: none !important; } }
+
+@media only screen and (max-width: 1021px) {
+  .x-max-none-1024 {
+    display: none !important; } }

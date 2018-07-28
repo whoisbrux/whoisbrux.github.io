@@ -1,0 +1,83 @@
+@import 'normal-reset';
+@import 'x-mixins';
+@import 'myheader';
+@import 'myfooter';
+
+// scss
+$Trirong: 'Trirong', serif;
+$OpenSans: 'Open Sans', sans-serif;
+$cinzaClaro: #A1A1A1;
+
+// Shop // full header
+.full-header {
+  height: 63vh;
+}
+
+.full-header .holder {
+  width: 90%;
+  padding: 20px;
+}
+
+.full-header p {
+  font-family: $Trirong;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 5px;
+  letter-spacing: .05rem;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.full-header .holder span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.full-header .holder img {
+  height: 6px;
+  padding: 0 5px;
+}
+
+//
+@include x-768 {
+  .full-header p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .full-header .holder span {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+}
+
+//
+@include x-1024 {}
+
+//
+@include x-1366 {
+  .full-header {
+    height: 75vh;
+  }
+
+  .full-header p {
+    font-size: 2.6rem;
+    line-height: 4.8rem;
+  }
+
+  .full-header .holder span {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+}
+
+//
+@include x-1920 {}
+
+// main 
+.main {
+  padding-top: 0;
+  margin-top: -100px;
+}
