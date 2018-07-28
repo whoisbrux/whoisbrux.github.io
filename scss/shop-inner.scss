@@ -9,6 +9,11 @@ $OpenSans: 'Open Sans', sans-serif;
 $cinzaClaro: #A1A1A1;
 
 // shop-inner
+
+.product-full {
+  padding-top: 100px;
+}
+
 .holder-product {
   width: 340px;
   position: relative;
@@ -121,6 +126,10 @@ $cinzaClaro: #A1A1A1;
 
 //
 @include x-1024 {
+  .product-full {
+    padding-top: 130px;
+  }
+
   .product-full .holder-product {
     display: flex;
   }
@@ -164,7 +173,7 @@ $cinzaClaro: #A1A1A1;
 }
 @include x-1920 {
   .product-full {
-    padding: 30px 0 80px;
+    padding: 130px 0 80px;
   }
 
   .sct-looks.row-2 {

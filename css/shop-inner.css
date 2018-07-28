@@ -888,6 +888,9 @@ button {
   .footer .x-menu li {
     margin-left: 30px; } }
 
+.product-full {
+  padding-top: 100px; }
+
 .holder-product {
   width: 340px;
   position: relative;
@@ -976,6 +979,8 @@ button {
     margin: 0 auto; } }
 
 @media only screen and (min-width: 1023px) {
+  .product-full {
+    padding-top: 130px; }
   .product-full .holder-product {
     display: flex; }
   .product-full .holder-img-full {
@@ -1005,6 +1010,6 @@ button {
 
 @media only screen and (min-width: 1919px) {
   .product-full {
-    padding: 30px 0 80px; }
+    padding: 130px 0 80px; }
   .sct-looks.row-2 {
     margin-top: 130px; } }
